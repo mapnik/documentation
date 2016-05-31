@@ -6,6 +6,7 @@ echo "VERSION: ${VERSION}"
 
 touch testfile.txt
 
+ls -lah
 # cd node_modules/documentation
 # npm link
 # cd ../..
