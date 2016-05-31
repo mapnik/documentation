@@ -7,10 +7,5 @@
   "scripts": {
     "test": "echo 'This is our test!'"
   },
-  "license": "ISC",
-  "devDependencies": {
-    // "documentation": "4.0.0-beta2",
-    // "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
-    // "node-mapnik-theme": "0.0.1"
-  }
+  "license": "ISC"
 }
