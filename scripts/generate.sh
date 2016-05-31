@@ -3,6 +3,9 @@
 
 VERSION=$1
 echo "VERSION: ${VERSION}"
+
+touch testfile.txt
+
 # cd node_modules/documentation
 # npm link
 # cd ../..

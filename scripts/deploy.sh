@@ -13,6 +13,8 @@ fi
 rev=$(git rev-parse --short HEAD)
 echo $rev
 
+ls -lah
+
 git init
 git config user.name "$GH_USERNAME"
 git config user.email "$GH_EMAIL"

@@ -1,8 +1,6 @@
 sudo: false
-language: node_js
 install:
   - npm install
-scripts:
   - ./scripts/generate.sh 3.5
 after_success:
   - ./scripts/deploy.sh
