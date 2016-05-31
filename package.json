@@ -4,6 +4,9 @@
   "description": "A sink for mapnik documentation",
   "main": "index.js",
   "author": "",
+  "scripts": {
+    "test": "echo 'This is our test!'"
+  },
   "license": "ISC",
   "devDependencies": {
     "documentation": "4.0.0-beta2",
