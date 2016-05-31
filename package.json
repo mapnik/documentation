@@ -1,0 +1,16 @@
+{
+  "name": "mapnik-documentation",
+  "version": "0.0.0",
+  "description": "A sink for mapnik documentation",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./scripts/generate_docs.sh 3.5"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "documentation": "4.0.0-beta2",
+    "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
+    "node-mapnik-theme": "0.0.1"
+  }
+}
