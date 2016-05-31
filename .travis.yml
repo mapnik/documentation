@@ -5,3 +5,6 @@ install:
   - ./scripts/generate.sh 3.5
 after_success:
   - ./scripts/deploy.sh
+branches:
+  only:
+    - gh-pages
