@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -o errexit -o nounset
+# set -o errexit -o nounset
 
 echo $TRAVIS_BRANCH
 
