@@ -50,6 +50,6 @@ git commit -m "Update docs at ${SHA}"
 # eval `ssh-agent -s`
 # ssh-add deploy_key
 
-git push "https://$GITHUB_AUTH@github.com/rust-lang/rust-by-example.git" $TARGET_BRANCH
+git push "https://$GITHUB_AUTH@github.com/mapnik/documentation.git" $TARGET_BRANCH
 
 exit 0
