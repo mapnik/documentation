@@ -33,13 +33,14 @@ cp -r node-mapnik/ out/
 # now go back into our fresh clone, with updated files
 # and start getting things ready for the push
 cd out
+touch waka.txt # temporary for testing
 git config user.name "$GH_USERNAME"
 git config user.email "$GH_EMAIL"
 
 echo " - - - GIT STATUS - - - "
 git status
 
-git add --all
+git add --all # dangerous?
 git commit -m "Update docs at ${SHA}"
 
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
