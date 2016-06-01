@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# set -o errexit -o nounset
+set -o errexit -o nounset
 
-echo $TRAVIS_BRANCH
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
@@ -12,11 +11,8 @@ then
   exit 0
 fi
 
-echo " - - - BRANCH VARS - - - "
 REPO=`git config remote.origin.url`
 SHA=`git rev-parse --verify HEAD`
-echo $REPO
-echo $SHA
 
 # since we are doing this from the master branch, let's 
 #  get a fresh clone ready, and set it to gh-pages
@@ -25,31 +21,17 @@ cd out
 git checkout $TARGET_BRANCH
 cd ..
 
-# copy over the newly rolled docs, from generate.sh
+# copy over the newly rolled docs, from scripts/generate.sh
 cp -r node-mapnik/ out/
 
 # now go back into our fresh clone, with updated files
 # and start getting things ready for the push
 cd out
-touch waka.txt # temporary for testing
 git config user.name "$GH_USERNAME"
 git config user.email "$GH_EMAIL"
 
-echo " - - - GIT STATUS - - - "
-git status
-
 git add --all # dangerous?
 git commit -m "Update docs at ${SHA}"
-
-# ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
-# ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
-# ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-# ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-# openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out deploy_key -d
-# chmod 600 deploy_key
-# eval `ssh-agent -s`
-# ssh-add deploy_key
-
 git push "https://$GITHUB_AUTH@github.com/mapnik/documentation.git" $TARGET_BRANCH
 
 exit 0

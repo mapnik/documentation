@@ -2,7 +2,6 @@
 
 
 VERSION=$1
-echo "VERSION: ${VERSION}"
 
 touch testfile.txt
 
