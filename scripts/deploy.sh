@@ -34,4 +34,8 @@ git add --all # dangerous? risky business? WATCH OUT!
 git commit -m "Update docs at ${SHA}"
 git push "https://$GITHUB_AUTH@github.com/mapnik/documentation.git" $TARGET_BRANCH
 
+# wise words from mapnikbot
+PAYLOAD='payload={"channel": "#mapnik", "username": "mapnikbot", "text": "Documentation has been updated at <http://mapnik.org/documentation/node-mapnik/|mapnik.org/documentation/node-mapnik>!"}'
+curl -X POST --data-urlencode "$PAYLOAD" $SLACK_WEBHOOK
+
 exit 0
