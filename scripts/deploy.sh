@@ -30,7 +30,7 @@ cd out
 git config user.name "$GH_USERNAME"
 git config user.email "$GH_EMAIL"
 
-git add --all # dangerous?
+git add --all # dangerous? risky business? WATCH OUT!
 git commit -m "Update docs at ${SHA}"
 git push "https://$GITHUB_AUTH@github.com/mapnik/documentation.git" $TARGET_BRANCH
 

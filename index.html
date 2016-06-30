@@ -31,9 +31,28 @@
     width: 21.5%;
     float: right;
   }
+  .lang-section {
+    margin-bottom: 3em;
+  }
+  .button.github {
+    border: 3px solid #333;
+    background: white;
+    color: #333;
+  }
+  .button.api {
+    border: 3px solid #a00;
+    background: #a00;
+    color: white;
+  }
+  .button:hover {
+    opacity: 0.8;
+  }
   pre {
     padding: 0;
     width: 100%;
+  }
+  h1 {
+    margin-bottom: 0.5em;
   }
   h2 {
     margin-top: 1.5em;
@@ -45,22 +64,47 @@
 </head>
 <body>
   <section class="header">
-    <div class="container clearfix">
-      <h1>Node Mapnik</h1>
-      <p>Provides a set of bindings to Mapnik for Node.js</p>
-      <a class="github-button" href="https://github.com/mapnik/node-mapnik" data-icon="octicon-star" data-style="mega" data-count-href="/mapnik/node-mapnik/stargazers" data-count-api="/repos/mapnik/node-mapnik#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mapnik/node-mapnik on GitHub">Star</a>
-      <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <div class="container">
+      <h1>Mapnik Documentation</h1>
+      <p>Mapnik comes in a variety of languages including Python and Node.js.</p>
     </div>
   </section>
 
-  <section class="container clearfix">
-    <div class="left">
-    <p>Node Mapnik is based on Mapnik, a C++ library created for rendering images and vector tiles from custom geographic data sources.</p>
-    <p>Current version: <strong id="version">3.5.0</strong></p>
-    <h2>Installation</h2>
-    <p>Node Mapnik is registered in npm as a module. You can install it with the following command.</p>
-    <pre><code class="bash">npm install --save mapnik</code></pre>
-    <h2>Usage</h2>
+  <section class="container">
+    <div class="lang-section clearfix">
+      <div class="left">
+        <h1>C++</h1>
+        <p><a href="https://github.com/mapnik/mapnik/wiki/MapnikTutorials">Tutorials</a> | <a href="https://github.com/mapnik/mapnik">Github Repository</a></p>
+        <p>Mapnik is a C++ library at its core. The latest documentation on installation and usage can be found on the <a href="https://github.com/mapnik/mapnik/wiki">Github wiki</a>.</p>
+        <p>Current version: <strong id="version">3.0.11</strong></p>
+      </div>
+    </div>
+
+    <div class="lang-section clearfix">
+      <div class="left">
+        <h1>Node.js</h1>
+        <p>Node Mapnik is based on Mapnik, a C++ library created for rendering images and vector tiles from custom geographic data sources.</p>
+        <p><a href="node-mapnik/">API Reference (latest)</a> | <a href="https://github.com/mapnik/node-mapnik">Github Repository</a></p>
+        <p>Current version: <strong id="version">3.5.13</strong></p>
+        <h3>Installation</h3>
+        <p>Node Mapnik is registered in npm as a module. You can install it with the following command.</p>
+        <pre><code class="bash">npm install --save mapnik</code></pre>
+      </div>
+      <div class="right">
+        <h3>API Reference</h3>
+        <a class="btn btn-primary" href="node-mapnik/3.5">3.5 (latest)</a><br> 
+        <a class="btn btn-outline" href="node-mapnik/3.4">3.4</a>
+      </div>
+    </div>
+
+    <div class="lang-section clearfix">
+      <div class="left">
+        <h1>Python</h1>
+        <p>Python bindings for Mapnik</p>
+        <p><a href="https://github.com/mapnik/python-mapnik">Github Repository</a></p>
+      </div>
+    </div>
+      <!-- <h2>Usage</h2>
     <p>Render a map from a stylesheet:</p>
 
 <pre><code class="javascript">var mapnik = require('mapnik');
@@ -86,14 +130,11 @@ map.load('./test/stylesheet.xml', function(err,map) {
       });
     });
 });
-</code></pre>
-    </div>
+</code></pre> -->
 
-    <div class="right">
-      <h3>API Reference</h3>
-      <a class="btn btn-primary" href="/node-mapnik/documentation/3.5">3.5 (latest)</a><br> 
-      <a class="btn btn-outline" href="/node-mapnik/documentation/3.4">3.4</a>
-    </div>
+    
+
+    
   </section>
 
   <section class="footer">

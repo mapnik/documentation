@@ -1,6 +1,5 @@
 # generates Node Mapnik documentation using documentationjs
 
-
 VERSION=$1
 
 touch testfile.txt
