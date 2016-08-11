@@ -119,6 +119,11 @@
             #loadSync
           </a>
           <a
+            href='#Map.render'
+            class=' '>
+            #render
+          </a>
+          <a
             href='#Map.resize'
             class=' '>
             #resize
@@ -1655,13 +1660,13 @@ object</p>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> map = <span class="hljs-keyword">new</span> mapnik.Map(<span class="hljs-number">25</span>, <span class="hljs-number">25</span>, <span class="hljs-string">'+init=epsg:3857'</span>);
 <span class="hljs-built_in">console</span>.log(map);
-<span class="hljs-comment">// { </span>
+<span class="hljs-comment">// {</span>
 <span class="hljs-comment">//   aspect_fix_mode: 0,</span>
 <span class="hljs-comment">//   parameters: {},</span>
 <span class="hljs-comment">//   background: undefined,</span>
 <span class="hljs-comment">//   maximumExtent: undefined,</span>
 <span class="hljs-comment">//   bufferedExtent: [ NaN, NaN, NaN, NaN ],</span>
-<span class="hljs-comment">//   extent: </span>
+<span class="hljs-comment">//   extent:</span>
 <span class="hljs-comment">//   [ 1.7976931348623157e+308,</span>
 <span class="hljs-comment">//    1.7976931348623157e+308,</span>
 <span class="hljs-comment">//    -1.7976931348623157e+308,</span>
@@ -1669,7 +1674,7 @@ object</p>
 <span class="hljs-comment">//   bufferSize: 0,</span>
 <span class="hljs-comment">//   height: 400,</span>
 <span class="hljs-comment">//   width: 600,</span>
-<span class="hljs-comment">//   srs: '+init=epsg:3857' </span>
+<span class="hljs-comment">//   srs: '+init=epsg:3857'</span>
 <span class="hljs-comment">// }</span></pre>
 
 
@@ -2369,6 +2374,243 @@ XML stylesheet.</p>
     <h4>Example</h4>
 
     <pre class='overflow-auto'>map.loadSync(<span class="hljs-string">'./style.xml'</span>);</pre>
+
+
+
+
+</section>
+        </div>
+      </div>
+      <div class='collapsible' id='Map.render'>
+        <a href='#Map.render'>
+          <code>
+            #render<span class='gray'>(renderable, [options], [buffer_size], [scale], [scale_denominator], [offset_x], [offset_y], [image_scaling], [image_format], [area_threshold], [strictly_simple], [multi_polygon_union], [fill_type], [threading_mode], [simplify_distance], [variables], [process_all_rings])</span>
+          </code>
+          <div class='force-inline'>
+            <p>Renders a mapnik object (image tile, grid, vector tile) by passing in a renderable mapnik object.</p>
+
+          </div>
+        </a>
+        <div class='collapser border px2'>
+        <section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_map.cpp#L1581-L1640'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='Map.render' class='function'>
+    render<span class='gray section-params'>(renderable, [options], [buffer_size], [scale], [scale_denominator], [offset_x], [offset_y], [image_scaling], [image_format], [area_threshold], [strictly_simple], [multi_polygon_union], [fill_type], [threading_mode], [simplify_distance], [variables], [process_all_rings])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Renders a mapnik object (image tile, grid, vector tile) by passing in a renderable mapnik object.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>renderable</td>
+            <td>mapnik.Image
+ </td>
+            <td class='param-description'><p>mapnik object</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>buffer_size</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+  (<code>0</code>)</td>
+            <td class='param-description'><p>size of the buffer on the image</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>scale</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+  (<code>1.0</code>)</td>
+            <td class='param-description'><p>scale the image</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>scale_denominator</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+  (<code>0.0</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>offset_x</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+  (<code>0</code>)</td>
+            <td class='param-description'><p>pixel offset along the x-axis</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>offset_y</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+  (<code>0</code>)</td>
+            <td class='param-description'><p>pixel offset along the y-axis</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>image_scaling</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+=
+ </td>
+            <td class='param-description'><p>must be a valid scaling method (used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>image_format</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+=
+ </td>
+            <td class='param-description'><p>must be a string and valid image format (used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>area_threshold</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+ </td>
+            <td class='param-description'><p>used to discard small polygons by setting a minimum size (used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>strictly_simple</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+=
+ </td>
+            <td class='param-description'><p>ensure all geometry is valid according to
+OGC Simple definition (used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>multi_polygon_union</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+=
+ </td>
+            <td class='param-description'><p>union all multipolygons (used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>fill_type</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+=
+ </td>
+            <td class='param-description'><p>the fill type used in determining what are holes and what are outer rings. See the
+<a href="http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/PolyFillType.htm">Clipper documentation</a>
+to learn more about fill types. (used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>threading_mode</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+=
+ </td>
+            <td class='param-description'><p>(used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>simplify_distance</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+ </td>
+            <td class='param-description'><p>Simplification works to generalize
+geometries before encoding into vector tiles.simplification distance The
+<code>simplify_distance</code> value works in integer space over a 4096 pixel grid and uses
+the <a href="https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm">Douglas-Peucker algorithm</a>.
+(used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>variables</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+ </td>
+            <td class='param-description'><p>Mapnik 3.x ONLY: A javascript object
+containing key value pairs that should be passed into Mapnik as variables
+for rendering and for datasource queries. For example if you passed
+<code>vtile.render(map,image,{ variables : {zoom:1} },cb)</code> then the <code>@zoom</code>
+variable would be usable in Mapnik symbolizers like <code>line-width:&quot;@zoom&quot;</code>
+and as a token in Mapnik postgis sql sub-selects like
+<code>(select * from table where some_field &gt; @zoom)</code> as tmp (used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>process_all_rings</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+=
+ </td>
+            <td class='param-description'><p>if <code>true</code>, don&#x27;t assume winding order and ring order of
+polygons are correct according to the <a href="https://github.com/mapbox/vector-tile-spec"><code>2.0</code> Mapbox Vector Tile specification</a>
+(used when rendering a vector tile)</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Map
+</code>
+      :
+      <div class='force-inline'>
+        <p>rendered image tile</p>
+
+      </div>
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-comment">// render data to an image object</span>
+<span class="hljs-keyword">var</span> map = <span class="hljs-keyword">new</span> mapnik.Map(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
+map.loadSync(<span class="hljs-string">'./path/to/stylesheet.xml'</span>);
+<span class="hljs-keyword">var</span> image = <span class="hljs-keyword">new</span> mapnik.Image(map.width, map.height);
+map.render(image, {}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, image</span>) </span>{
+    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+    <span class="hljs-built_in">console</span>.log(image) <span class="hljs-comment">// =&gt; mapnik image object with data from xml</span>
+});</pre>
+
+    <pre class='overflow-auto'><span class="hljs-comment">// render data to a vector tile object</span>
+<span class="hljs-keyword">var</span> map = <span class="hljs-keyword">new</span> mapnik.Map(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
+map.loadSync(<span class="hljs-string">'./path/to/stylesheet.xml'</span>);
+<span class="hljs-keyword">var</span> vtile = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">9</span>,<span class="hljs-number">112</span>,<span class="hljs-number">195</span>);
+map.render(vtile, {}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, vtile</span>) </span>{
+    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+    <span class="hljs-built_in">console</span>.log(vtile); <span class="hljs-comment">// =&gt; vector tile object with data from xml </span>
+});</pre>
 
 
 
@@ -5782,7 +6024,7 @@ It is recommended that you do not use this method. Be warned!</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3260-L3274'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3263-L3277'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBytes' class='function'>
     fromBytes<span class='gray section-params'>(buffer, callback)</span>
   </h2>
@@ -6470,7 +6712,7 @@ a new image</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3801-L3830'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3804-L3833'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.composite' class='function'>
     composite<span class='gray section-params'>(image, [options], callback)</span>
   </h2>
@@ -6773,7 +7015,7 @@ img1.composite(img2, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L4061-L4071'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L4064-L4074'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.data' class='function'>
     data<span class='gray section-params'></span>
   </h2>
@@ -6911,7 +7153,7 @@ premultiplying.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3454-L3480'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3457-L3483'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.encode' class='function'>
     encode<span class='gray section-params'>([format], [options], callback)</span>
   </h2>
@@ -7013,7 +7255,7 @@ im.encode(<span class="hljs-string">'png'</span>, {palette: pal}, <span class="h
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3367-L3382'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3370-L3385'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.encodeSync' class='function'>
     encodeSync<span class='gray section-params'>([format], [options])</span>
   </h2>
@@ -7366,7 +7608,7 @@ img.filter(<span class="hljs-string">'blur'</span>);
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3203-L3214'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3206-L3217'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBytesSync' class='function'>
     fromBytesSync<span class='gray section-params'>(buffer)</span>
   </h2>
@@ -8224,7 +8466,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3688-L3702'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3691-L3705'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.save' class='function'>
     save<span class='gray section-params'>(filename, [format], callback)</span>
   </h2>
@@ -8297,7 +8539,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3621-L3631'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3624-L3634'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.saveSync' class='function'>
     saveSync<span class='gray section-params'>(filename, [format])</span>
   </h2>
@@ -8502,7 +8744,7 @@ gray.setPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</sp
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3586-L3603'>node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_image.cpp#L3589-L3606'>node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.view' class='function'>
     view<span class='gray section-params'>(x, y, width, height)</span>
   </h2>
@@ -9196,7 +9438,7 @@ created.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_feature.cpp#L196-L203'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_feature.cpp#L197-L204'>node_modules/mapnik/src/mapnik_feature.cpp</a>
   <h2 id='Feature.geometry' class='function'>
     geometry<span class='gray section-params'></span>
   </h2>
@@ -9280,7 +9522,7 @@ created.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_feature.cpp#L210-L217'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_feature.cpp#L211-L218'>node_modules/mapnik/src/mapnik_feature.cpp</a>
   <h2 id='Feature.toJSON' class='function'>
     toJSON<span class='gray section-params'></span>
   </h2>
@@ -9681,7 +9923,7 @@ green.toString()
 
 </section>
 </div><div class='main'><section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L22-L29'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L21-L28'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
   <h2 id='Datasource' class='function'>
     Datasource<span class='gray section-params'></span>
   </h2>
@@ -9714,7 +9956,7 @@ of file, network, or database source of geographical data.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L203-L211'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L202-L210'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
   <h2 id='Datasource.describe' class='function'>
     describe<span class='gray section-params'></span>
   </h2>
@@ -9758,7 +10000,7 @@ geometry_type, and proj4 code</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L167-L174'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L166-L173'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
   <h2 id='Datasource.extent' class='function'>
     extent<span class='gray section-params'></span>
   </h2>
@@ -9804,7 +10046,7 @@ geometry_type, and proj4 code</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L235-L250'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L234-L249'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
   <h2 id='Datasource.featureset' class='function'>
     featureset<span class='gray section-params'></span>
   </h2>
@@ -9856,7 +10098,7 @@ features from a dataset.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L290-L312'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_datasource.cpp#L289-L311'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
   <h2 id='Datasource.fields' class='function'>
     fields<span class='gray section-params'></span>
   </h2>
