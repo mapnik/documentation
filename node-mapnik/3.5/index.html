@@ -2384,7 +2384,7 @@ XML stylesheet.</p>
       <div class='collapsible' id='Map.render'>
         <a href='#Map.render'>
           <code>
-            #render<span class='gray'>(renderable, [options], [buffer_size], [scale], [scale_denominator], [offset_x], [offset_y], [image_scaling], [image_format], [area_threshold], [strictly_simple], [multi_polygon_union], [fill_type], [threading_mode], [simplify_distance], [variables], [process_all_rings])</span>
+            #render<span class='gray'>(renderable, [options])</span>
           </code>
           <div class='force-inline'>
             <p>Renders a mapnik object (image tile, grid, vector tile) by passing in a renderable mapnik object.</p>
@@ -2395,7 +2395,7 @@ XML stylesheet.</p>
         <section class='py2 clearfix'>
     <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_map.cpp#L1581-L1640'>node_modules/mapnik/src/mapnik_map.cpp</a>
   <h2 id='Map.render' class='function'>
-    render<span class='gray section-params'>(renderable, [options], [buffer_size], [scale], [scale_denominator], [offset_x], [offset_y], [image_scaling], [image_format], [area_threshold], [strictly_simple], [multi_polygon_union], [fill_type], [threading_mode], [simplify_distance], [variables], [process_all_rings])</span>
+    render<span class='gray section-params'>(renderable, [options])</span>
   </h2>
   
   
@@ -2429,135 +2429,122 @@ XML stylesheet.</p>
             <td class='param-description'></td>
           </tr>
 
-          <tr class='param'>
-            <td>buffer_size</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+            <tr class='param'>
+              <td>options.buffer_size</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
 =
   (<code>0</code>)</td>
-            <td class='param-description'><p>size of the buffer on the image</p>
+              <td class='param-description'><p>size of the buffer on the image</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>scale</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+            </tr>
+            <tr class='param'>
+              <td>options.scale</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
 =
   (<code>1.0</code>)</td>
-            <td class='param-description'><p>scale the image</p>
+              <td class='param-description'><p>scale the image</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>scale_denominator</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+            </tr>
+            <tr class='param'>
+              <td>options.scale_denominator</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
 =
   (<code>0.0</code>)</td>
-            <td class='param-description'></td>
-          </tr>
-
-          <tr class='param'>
-            <td>offset_x</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+              <td class='param-description'></td>
+            </tr>
+            <tr class='param'>
+              <td>options.offset_x</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
 =
   (<code>0</code>)</td>
-            <td class='param-description'><p>pixel offset along the x-axis</p>
+              <td class='param-description'><p>pixel offset along the x-axis</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>offset_y</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+            </tr>
+            <tr class='param'>
+              <td>options.offset_y</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
 =
   (<code>0</code>)</td>
-            <td class='param-description'><p>pixel offset along the y-axis</p>
+              <td class='param-description'><p>pixel offset along the y-axis</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>image_scaling</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+            </tr>
+            <tr class='param'>
+              <td>options.image_scaling</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
 =
  </td>
-            <td class='param-description'><p>must be a valid scaling method (used when rendering a vector tile)</p>
+              <td class='param-description'><p>must be a valid scaling method (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>image_format</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+            </tr>
+            <tr class='param'>
+              <td>options.image_format</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
 =
  </td>
-            <td class='param-description'><p>must be a string and valid image format (used when rendering a vector tile)</p>
+              <td class='param-description'><p>must be a string and valid image format (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>area_threshold</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+            </tr>
+            <tr class='param'>
+              <td>options.area_threshold</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
 =
  </td>
-            <td class='param-description'><p>used to discard small polygons by setting a minimum size (used when rendering a vector tile)</p>
+              <td class='param-description'><p>used to discard small polygons by setting a minimum size (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>strictly_simple</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+            </tr>
+            <tr class='param'>
+              <td>options.strictly_simple</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
 =
  </td>
-            <td class='param-description'><p>ensure all geometry is valid according to
+              <td class='param-description'><p>ensure all geometry is valid according to
 OGC Simple definition (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>multi_polygon_union</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+            </tr>
+            <tr class='param'>
+              <td>options.multi_polygon_union</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
 =
  </td>
-            <td class='param-description'><p>union all multipolygons (used when rendering a vector tile)</p>
+              <td class='param-description'><p>union all multipolygons (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>fill_type</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+            </tr>
+            <tr class='param'>
+              <td>options.fill_type</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
 =
  </td>
-            <td class='param-description'><p>the fill type used in determining what are holes and what are outer rings. See the
+              <td class='param-description'><p>the fill type used in determining what are holes and what are outer rings. See the
 <a href="http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/PolyFillType.htm">Clipper documentation</a>
 to learn more about fill types. (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>threading_mode</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+            </tr>
+            <tr class='param'>
+              <td>options.threading_mode</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
 =
  </td>
-            <td class='param-description'><p>(used when rendering a vector tile)</p>
+              <td class='param-description'><p>(used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>simplify_distance</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+            </tr>
+            <tr class='param'>
+              <td>options.simplify_distance</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
 =
  </td>
-            <td class='param-description'><p>Simplification works to generalize
+              <td class='param-description'><p>Simplification works to generalize
 geometries before encoding into vector tiles.simplification distance The
 <code>simplify_distance</code> value works in integer space over a 4096 pixel grid and uses
 the <a href="https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm">Douglas-Peucker algorithm</a>.
 (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>variables</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+            </tr>
+            <tr class='param'>
+              <td>options.variables</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
 =
  </td>
-            <td class='param-description'><p>Mapnik 3.x ONLY: A javascript object
+              <td class='param-description'><p>Mapnik 3.x ONLY: A javascript object
 containing key value pairs that should be passed into Mapnik as variables
 for rendering and for datasource queries. For example if you passed
 <code>vtile.render(map,image,{ variables : {zoom:1} },cb)</code> then the <code>@zoom</code>
@@ -2565,19 +2552,17 @@ variable would be usable in Mapnik symbolizers like <code>line-width:&quot;@zoom
 and as a token in Mapnik postgis sql sub-selects like
 <code>(select * from table where some_field &gt; @zoom)</code> as tmp (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
-          <tr class='param'>
-            <td>process_all_rings</td>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+            </tr>
+            <tr class='param'>
+              <td>options.process_all_rings</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
 =
  </td>
-            <td class='param-description'><p>if <code>true</code>, don&#x27;t assume winding order and ring order of
+              <td class='param-description'><p>if <code>true</code>, don&#x27;t assume winding order and ring order of
 polygons are correct according to the <a href="https://github.com/mapbox/vector-tile-spec"><code>2.0</code> Mapbox Vector Tile specification</a>
 (used when rendering a vector tile)</p>
 </td>
-          </tr>
-
+            </tr>
       </table>
     </div>
 
