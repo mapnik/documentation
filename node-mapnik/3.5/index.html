@@ -2882,7 +2882,7 @@ Learn more about vector tiles <a href="https://www.mapbox.com/developers/vector-
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3928-L3947'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3929-L3948'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.addData' class='function'>
     addData<span class='gray section-params'>(buffer, [options], callback)</span>
   </h2>
@@ -2975,7 +2975,7 @@ vt.addData(data_buffer, <span class="hljs-function"><span class="hljs-keyword">f
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3826-L3842'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3827-L3843'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.addDataSync' class='function'>
     addDataSync<span class='gray section-params'>(buffer, [options])</span>
   </h2>
@@ -3053,13 +3053,14 @@ vt.addDataSync(data_buffer);
             #addGeoJSON<span class='gray'>(geojson, name, [options])</span>
           </code>
           <div class='force-inline'>
-            <p>Add features to this tile from a GeoJSON string</p>
+            <p>Add features to this tile from a GeoJSON string. GeoJSON coordinates must be in the WGS84 longitude &amp; latitude CRS
+as specified in the <a href="https://www.rfc-editor.org/rfc/rfc7946.txt">GeoJSON Specification</a>.</p>
 
           </div>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3150-L3180'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3150-L3181'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.addGeoJSON' class='function'>
     addGeoJSON<span class='gray section-params'>(geojson, name, [options])</span>
   </h2>
@@ -3068,7 +3069,8 @@ vt.addDataSync(data_buffer);
   
   
   
-  <p>Add features to this tile from a GeoJSON string</p>
+  <p>Add features to this tile from a GeoJSON string. GeoJSON coordinates must be in the WGS84 longitude &amp; latitude CRS
+as specified in the <a href="https://www.rfc-editor.org/rfc/rfc7946.txt">GeoJSON Specification</a>.</p>
 
   
     <h4>Parameters</h4>
@@ -3194,7 +3196,7 @@ vt.addGeoJSON(<span class="hljs-built_in">JSON</span>.stringify(geojson), <span 
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3463-L3487'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3464-L3488'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.addImage' class='function'>
     addImage<span class='gray section-params'>(image, name, [options])</span>
   </h2>
@@ -3292,7 +3294,7 @@ vt.addImage(im, <span class="hljs-string">'layer-name'</span>, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3717-L3735'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3718-L3736'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.addImageBuffer' class='function'>
     addImageBuffer<span class='gray section-params'>(buffer, name, callback)</span>
   </h2>
@@ -3370,7 +3372,7 @@ vt.addImageBufferSync(image_buffer, <span class="hljs-string">'layer-name'</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3640-L3654'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3641-L3655'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.addImageBufferSync' class='function'>
     addImageBufferSync<span class='gray section-params'>(buffer, name)</span>
   </h2>
@@ -3439,7 +3441,7 @@ as a tile layer (synchronous)</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3320-L3341'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3321-L3342'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.addImageSync' class='function'>
     addImageSync<span class='gray section-params'>(image, name, options)</span>
   </h2>
@@ -3585,7 +3587,7 @@ vt.addImageSync(im, <span class="hljs-string">'layer-name'</span>, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L5368-L5380'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L5369-L5381'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.clear' class='function'>
     clear<span class='gray section-params'>(callback)</span>
   </h2>
@@ -3643,7 +3645,7 @@ vt.addImageSync(im, <span class="hljs-string">'layer-name'</span>, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L5336-L5344'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L5337-L5345'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.clearSync' class='function'>
     clearSync<span class='gray section-params'></span>
   </h2>
@@ -4128,7 +4130,7 @@ layers and no features</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4464-L4483'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4465-L4484'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.getData' class='function'>
     getData<span class='gray section-params'>([options], callback)</span>
   </h2>
@@ -4221,7 +4223,7 @@ layers and no features</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4300-L4317'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4301-L4318'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.getDataSync' class='function'>
     getDataSync<span class='gray section-params'>([options])</span>
   </h2>
@@ -4313,7 +4315,7 @@ debugging <code>.mvt</code> files with errors.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6462-L6494'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6463-L6495'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.info' class='function'>
     info<span class='gray section-params'>(buffer)</span>
   </h2>
@@ -4912,7 +4914,7 @@ The <code>feature_id</code> is the corresponding object in features object.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4754-L4795'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4755-L4796'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.render' class='function'>
     render<span class='gray section-params'>(map, surface, [options], callback)</span>
   </h2>
@@ -5097,7 +5099,7 @@ vt.render(map, <span class="hljs-keyword">new</span> mapnik.Image(<span class="h
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6116-L6129'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6117-L6130'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.reportGeometrySimplicity' class='function'>
     reportGeometrySimplicity<span class='gray section-params'>(callback)</span>
   </h2>
@@ -5156,7 +5158,7 @@ vt.render(map, <span class="hljs-keyword">new</span> mapnik.Image(<span class="h
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L5988-L5999'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L5989-L6000'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.reportGeometrySimplicitySync' class='function'>
     reportGeometrySimplicitySync<span class='gray section-params'></span>
   </h2>
@@ -5204,7 +5206,7 @@ vt.render(map, <span class="hljs-keyword">new</span> mapnik.Image(<span class="h
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6193-L6212'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6194-L6213'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.reportGeometryValidity' class='function'>
     reportGeometryValidity<span class='gray section-params'>([options], callback)</span>
   </h2>
@@ -5297,7 +5299,7 @@ and multilinestrings for each part they contain, rather then as a group.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6026-L6044'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L6027-L6045'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.reportGeometryValiditySync' class='function'>
     reportGeometryValiditySync<span class='gray section-params'>([options])</span>
   </h2>
@@ -5390,7 +5392,7 @@ and multilinestrings for each part they contain, rather then as a group.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4165-L4183'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4166-L4184'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.setData' class='function'>
     setData<span class='gray section-params'>(buffer, [options], callback)</span>
   </h2>
@@ -5483,7 +5485,7 @@ geometry according to the <a href="https://github.com/mapbox/vector-tile-spec">M
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4062-L4078'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/2007848f1b4b49be176f9d9542d822372ef471ec/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4063-L4079'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
   <h2 id='VectorTile.setDataSync' class='function'>
     setDataSync<span class='gray section-params'>(buffer, [options])</span>
   </h2>
