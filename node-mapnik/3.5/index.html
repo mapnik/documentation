@@ -3265,12 +3265,12 @@ of the &lt;mapnik.imageScaling&gt; methods</p>
     <h4>Example</h4>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> vt = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, {
-  tile_size:<span class="hljs-number">256</span>
+  <span class="hljs-attr">tile_size</span>:<span class="hljs-number">256</span>
 });
 <span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
 vt.addImage(im, <span class="hljs-string">'layer-name'</span>, {
-  image_format: <span class="hljs-string">'jpeg'</span>,
-  image_scaling: <span class="hljs-string">'gaussian'</span>
+  <span class="hljs-attr">image_format</span>: <span class="hljs-string">'jpeg'</span>,
+  <span class="hljs-attr">image_scaling</span>: <span class="hljs-string">'gaussian'</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-comment">// your custom code using `vt`  </span>
@@ -3346,7 +3346,7 @@ vt.addImage(im, <span class="hljs-string">'layer-name'</span>, {
     <h4>Example</h4>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> vt = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, {
-  tile_size: <span class="hljs-number">256</span>
+  <span class="hljs-attr">tile_size</span>: <span class="hljs-number">256</span>
 });
 <span class="hljs-keyword">var</span> image_buffer = fs.readFileSync(<span class="hljs-string">'./path/to/image.jpg'</span>); <span class="hljs-comment">// returns a buffer</span>
 vt.addImageBufferSync(image_buffer, <span class="hljs-string">'layer-name'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
@@ -3417,7 +3417,7 @@ vt.addImageBufferSync(image_buffer, <span class="hljs-string">'layer-name'</span
     <h4>Example</h4>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> vt = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, {
-  tile_size: <span class="hljs-number">256</span>
+  <span class="hljs-attr">tile_size</span>: <span class="hljs-number">256</span>
 });
 <span class="hljs-keyword">var</span> image_buffer = fs.readFileSync(<span class="hljs-string">'./path/to/image.jpg'</span>);
 vt.addImageBufferSync(image_buffer, <span class="hljs-string">'layer-name'</span>);</pre>
@@ -3510,12 +3510,12 @@ of the &lt;mapnik.imageScaling&gt; methods</p>
     <h4>Example</h4>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> vt = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, {
-  tile_size:<span class="hljs-number">256</span>
+  <span class="hljs-attr">tile_size</span>:<span class="hljs-number">256</span>
 });
 <span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
 vt.addImageSync(im, <span class="hljs-string">'layer-name'</span>, {
-  image_format: <span class="hljs-string">'jpeg'</span>,
-  image_scaling: <span class="hljs-string">'gaussian'</span>
+  <span class="hljs-attr">image_format</span>: <span class="hljs-string">'jpeg'</span>,
+  <span class="hljs-attr">image_scaling</span>: <span class="hljs-string">'gaussian'</span>
 });</pre>
 
 
@@ -3872,16 +3872,16 @@ of the &lt;mapnik.imageScaling&gt; methods</p>
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> vt1 = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
 <span class="hljs-keyword">var</span> vt2 = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
 <span class="hljs-keyword">var</span> options = {
-  scale: <span class="hljs-number">1.0</span>,
-  offset_x: <span class="hljs-number">0</span>,
-  offset_y: <span class="hljs-number">0</span>,
-  area_threshold: <span class="hljs-number">0.1</span>,
-  strictly_simple: <span class="hljs-literal">false</span>,
-  multi_polygon_union: <span class="hljs-literal">true</span>,
-  fill_type: mapnik.polygonFillType.nonZero,
-  process_all_rings:<span class="hljs-literal">false</span>,
-  scale_denominator: <span class="hljs-number">0.0</span>,
-  reencode: <span class="hljs-literal">true</span>
+  <span class="hljs-attr">scale</span>: <span class="hljs-number">1.0</span>,
+  <span class="hljs-attr">offset_x</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">offset_y</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">area_threshold</span>: <span class="hljs-number">0.1</span>,
+  <span class="hljs-attr">strictly_simple</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">multi_polygon_union</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">fill_type</span>: mapnik.polygonFillType.nonZero,
+  <span class="hljs-attr">process_all_rings</span>:<span class="hljs-literal">false</span>,
+  <span class="hljs-attr">scale_denominator</span>: <span class="hljs-number">0.0</span>,
+  <span class="hljs-attr">reencode</span>: <span class="hljs-literal">true</span>
 }
 <span class="hljs-comment">// add vt2 to vt1 tile</span>
 vt1.composite([vt2], options, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
@@ -4197,9 +4197,9 @@ layers and no features</p>
     <h4>Example</h4>
 
     <pre class='overflow-auto'>vt.getData({
-  compression: <span class="hljs-string">'gzip'</span>,
-  level: <span class="hljs-number">9</span>,
-  strategy: <span class="hljs-string">'FILTERED'</span>
+  <span class="hljs-attr">compression</span>: <span class="hljs-string">'gzip'</span>,
+  <span class="hljs-attr">level</span>: <span class="hljs-number">9</span>,
+  <span class="hljs-attr">strategy</span>: <span class="hljs-string">'FILTERED'</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, data</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-built_in">console</span>.log(data); <span class="hljs-comment">// buffer</span>
@@ -4291,9 +4291,9 @@ layers and no features</p>
     <h4>Example</h4>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> data = vt.getData({
-  compression: <span class="hljs-string">'gzip'</span>,
-  level: <span class="hljs-number">9</span>,
-  strategy: <span class="hljs-string">'FILTERED'</span>
+  <span class="hljs-attr">compression</span>: <span class="hljs-string">'gzip'</span>,
+  <span class="hljs-attr">level</span>: <span class="hljs-number">9</span>,
+  <span class="hljs-attr">strategy</span>: <span class="hljs-string">'FILTERED'</span>
 });</pre>
 
 
@@ -4760,7 +4760,7 @@ objects</p>
 
     <h4>Example</h4>
 
-    <pre class='overflow-auto'>vt.query(<span class="hljs-number">139.61</span>, <span class="hljs-number">37.17</span>, {tolerance: <span class="hljs-number">0</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, features</span>) </span>{
+    <pre class='overflow-auto'>vt.query(<span class="hljs-number">139.61</span>, <span class="hljs-number">37.17</span>, {<span class="hljs-attr">tolerance</span>: <span class="hljs-number">0</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, features</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-built_in">console</span>.log(features); <span class="hljs-comment">// array of objects</span>
   <span class="hljs-built_in">console</span>.log(features.length) <span class="hljs-comment">// 1</span>
@@ -4886,7 +4886,7 @@ The <code>feature_id</code> is the corresponding object in features object.</p>
 
     <h4>Example</h4>
 
-    <pre class='overflow-auto'>vt.queryMany([[<span class="hljs-number">139.61</span>, <span class="hljs-number">37.17</span>], [<span class="hljs-number">140.64</span>, <span class="hljs-number">38.1</span>]], {tolerance: <span class="hljs-number">0</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, results</span>) </span>{
+    <pre class='overflow-auto'>vt.queryMany([[<span class="hljs-number">139.61</span>, <span class="hljs-number">37.17</span>], [<span class="hljs-number">140.64</span>, <span class="hljs-number">38.1</span>]], {<span class="hljs-attr">tolerance</span>: <span class="hljs-number">0</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, results</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-built_in">console</span>.log(results.hits); <span class="hljs-comment">// </span>
   <span class="hljs-built_in">console</span>.log(results.features); <span class="hljs-comment">// array of feature objects</span>
@@ -5916,8 +5916,8 @@ or height is not numeric.</p>
     <h4>Example</h4>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>, {
-  premultiplied: <span class="hljs-literal">true</span>,
-  type: mapnik.imageType.gray8
+  <span class="hljs-attr">premultiplied</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">type</span>: mapnik.imageType.gray8
 });</pre>
 
     <h4>Static members</h4>
@@ -6143,7 +6143,7 @@ your SVG at 50% the original size.</p>
 
     <h4>Example</h4>
 
-    <pre class='overflow-auto'>mapnik.Image.fromSVG(<span class="hljs-string">'./path/to/image.svg'</span>, {scale: <span class="hljs-number">0.5</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, img</span>) </span>{
+    <pre class='overflow-auto'>mapnik.Image.fromSVG(<span class="hljs-string">'./path/to/image.svg'</span>, {<span class="hljs-attr">scale</span>: <span class="hljs-number">0.5</span>}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, img</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-comment">// new img object (at 50% scale)  </span>
 });</pre>
@@ -6798,11 +6798,11 @@ value that relates to a compositing operation.</p>
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> img1 = <span class="hljs-keyword">new</span> mapnik.Image.open(<span class="hljs-string">'./path/to/image.png'</span>);
 <span class="hljs-keyword">var</span> img2 = <span class="hljs-keyword">new</span> mapnik.Image.open(<span class="hljs-string">'./path/to/another-image.png'</span>);
 img1.composite(img2, {
-  comp_op: mapnik.compositeOp[<span class="hljs-string">'multiply'</span>],
-  dx: <span class="hljs-number">0</span>,
-  dy: <span class="hljs-number">0</span>,
-  opacity: <span class="hljs-number">0.5</span>,
-  image_filters: <span class="hljs-string">'invert agg-stack-blur(10,10)'</span>
+  <span class="hljs-attr">comp_op</span>: mapnik.compositeOp[<span class="hljs-string">'multiply'</span>],
+  <span class="hljs-attr">dx</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">dy</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">opacity</span>: <span class="hljs-number">0.5</span>,
+  <span class="hljs-attr">image_filters</span>: <span class="hljs-string">'invert agg-stack-blur(10,10)'</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-comment">// new image with `result`</span>
@@ -6893,7 +6893,7 @@ img1.composite(img2, {
 
     <h4>Example</h4>
 
-    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {type: mapnik.imageType.gray16});
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {<span class="hljs-attr">type</span>: mapnik.imageType.gray16});
 <span class="hljs-keyword">var</span> img2 = img.copy(mapnik.imageType.gray8, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, img2</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-comment">// custom code with `img2` converted into gray8 type</span>
@@ -6985,7 +6985,7 @@ img1.composite(img2, {
 
     <h4>Example</h4>
 
-    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {type: mapnik.imageType.gray16});
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {<span class="hljs-attr">type</span>: mapnik.imageType.gray16});
 <span class="hljs-keyword">var</span> img2 = img.copy(mapnik.imageType.gray8);
 <span class="hljs-comment">// custom code with `img2` as a gray8 type</span></pre>
 
@@ -7224,7 +7224,7 @@ myImage.encode(<span class="hljs-string">'png'</span>, <span class="hljs-functio
 <span class="hljs-comment">// encoding an image object with a mapnik.Palette</span>
 <span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
 <span class="hljs-keyword">var</span> pal = <span class="hljs-keyword">new</span> mapnik.Palette(<span class="hljs-keyword">new</span> Buffer(<span class="hljs-string">'\xff\x09\x93\xFF\x01\x02\x03\x04'</span>,<span class="hljs-string">'ascii'</span>));
-im.encode(<span class="hljs-string">'png'</span>, {palette: pal}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, encode</span>) </span>{
+im.encode(<span class="hljs-string">'png'</span>, {<span class="hljs-attr">palette</span>: pal}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, encode</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-comment">// your custom code with `encode` image buffer  </span>
 });</pre>
@@ -7381,7 +7381,7 @@ mapnik.Color
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">5</span>,<span class="hljs-number">5</span>);
 img.fill(<span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'blue'</span>), <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, img</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
-  <span class="hljs-keyword">var</span> colors = img.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {get_color: <span class="hljs-literal">true</span>});
+  <span class="hljs-keyword">var</span> colors = img.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {<span class="hljs-attr">get_color</span>: <span class="hljs-literal">true</span>});
   pixel is colored blue
   <span class="hljs-built_in">console</span>.log(color.b); <span class="hljs-comment">// 255   </span>
 });
@@ -7449,7 +7449,7 @@ mapnik.Color
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">5</span>,<span class="hljs-number">5</span>);
 <span class="hljs-comment">// blue pixels</span>
 img.fillSync(<span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'blue'</span>));
-<span class="hljs-keyword">var</span> colors = img.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {get_color: <span class="hljs-literal">true</span>});
+<span class="hljs-keyword">var</span> colors = img.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {<span class="hljs-attr">get_color</span>: <span class="hljs-literal">true</span>});
 <span class="hljs-comment">// blue value is filled</span>
 <span class="hljs-built_in">console</span>.log(colors.b); <span class="hljs-comment">// 255</span></pre>
 
@@ -7739,7 +7739,7 @@ map.background = <span class="hljs-keyword">new</span> mapnik.Color(<span class=
 map.render(img, {},<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, img</span>) </span>{
   <span class="hljs-built_in">console</span>.log(img.painted()); <span class="hljs-comment">// false</span>
   <span class="hljs-keyword">var</span> pixel = img.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
-  <span class="hljs-keyword">var</span> values = img.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {get_color: <span class="hljs-literal">true</span>});
+  <span class="hljs-keyword">var</span> values = img.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {<span class="hljs-attr">get_color</span>: <span class="hljs-literal">true</span>});
   <span class="hljs-built_in">console</span>.log(pixel); <span class="hljs-comment">// 4278222848</span>
   <span class="hljs-built_in">console</span>.log(values); <span class="hljs-comment">// { premultiplied: false, a: 255, b: 0, g: 128, r: 0 }</span>
 });</pre>
@@ -7789,7 +7789,7 @@ map.render(img, {},<span class="hljs-function"><span class="hljs-keyword">functi
     <h4>Example</h4>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>, {
-  type: mapnik.imageType.gray8
+  <span class="hljs-attr">type</span>: mapnik.imageType.gray8
 });
 <span class="hljs-keyword">var</span> type = img.getType();
 <span class="hljs-keyword">var</span> typeCheck = mapnik.imageType.gray8;
@@ -8321,7 +8321,7 @@ img.premultiplySync();
 
     <h4>Example</h4>
 
-    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {type: mapnik.imageType.gray8});
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {<span class="hljs-attr">type</span>: mapnik.imageType.gray8});
 img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
   <span class="hljs-comment">// new image object as `result`</span>
@@ -8436,7 +8436,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
 
     <h4>Example</h4>
 
-    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {type: mapnik.imageType.gray8});
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> img = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>, {<span class="hljs-attr">type</span>: mapnik.imageType.gray8});
 <span class="hljs-keyword">var</span> img2 = img.resizeSync(<span class="hljs-number">8</span>, <span class="hljs-number">8</span>);
 <span class="hljs-comment">// new copy as `img2`</span></pre>
 
@@ -8633,11 +8633,11 @@ a mask layer based on alpha values.</p>
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> image = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>);
 image.fillSync(<span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'rgba(0,0,0,255)'</span>));
-<span class="hljs-built_in">console</span>.log(image.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {get_color:<span class="hljs-literal">true</span>})); <span class="hljs-comment">// { premultiplied: false, a: 255, b: 0, g: 0, r: 0 }</span>
+<span class="hljs-built_in">console</span>.log(image.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {<span class="hljs-attr">get_color</span>:<span class="hljs-literal">true</span>})); <span class="hljs-comment">// { premultiplied: false, a: 255, b: 0, g: 0, r: 0 }</span>
 
 image.setGrayScaleToAlpha();
 <span class="hljs-comment">// turns a black pixel into a completely transparent mask</span>
-<span class="hljs-built_in">console</span>.log(image.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {get_color:<span class="hljs-literal">true</span>})); <span class="hljs-comment">// { premultiplied: false, a: 0, b: 255, g: 255, r: 255 }</span></pre>
+<span class="hljs-built_in">console</span>.log(image.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>, {<span class="hljs-attr">get_color</span>:<span class="hljs-literal">true</span>})); <span class="hljs-comment">// { premultiplied: false, a: 0, b: 255, g: 255, r: 255 }</span></pre>
 
 
 
@@ -8715,7 +8715,7 @@ image.setGrayScaleToAlpha();
 
     <pre class='overflow-auto'><span class="hljs-keyword">var</span> gray = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
 gray.setPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'white'</span>));
-<span class="hljs-keyword">var</span> pixel = gray.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,{get_color:<span class="hljs-literal">true</span>});
+<span class="hljs-keyword">var</span> pixel = gray.getPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,{<span class="hljs-attr">get_color</span>:<span class="hljs-literal">true</span>});
 <span class="hljs-built_in">console</span>.log(pixel); <span class="hljs-comment">// { premultiplied: false, a: 255, b: 255, g: 255, r: 255 }</span></pre>
 
 
