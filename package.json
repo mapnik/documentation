@@ -1,9 +1,9 @@
 {
   "name": "mapnik-documentation",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A sink for mapnik documentation",
   "main": "index.js",
-  "author": "",
+  "author": "Mapnik",
   "scripts": {
     "test": "echo 'This is our test!'"
   },
@@ -11,6 +11,6 @@
   "devDependencies": {
     "documentation": "4.0.0-beta2",
     "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
-    "node-mapnik-theme": "0.0.1"
+    "node-mapnik-theme": "0.0.2"
   }
 }
