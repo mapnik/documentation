@@ -12,10 +12,11 @@ body {
   font-size: 16px;
   position: relative;
   line-height: 1.3em;
+  background: #f2f2f2;
 }
 a {
   text-decoration: none;
-  color: #388991;
+  color: #7f7fff;
 }
 a:hover {
   text-decoration: underline;
@@ -39,10 +40,12 @@ p code {
     *zoom:1;
 }
 .title {
+  margin: 0 0 1em;
   font-size: 1.5em;
 }
 .toc-container {
   display: none;
+  background: white;
 }
 .content-container {}
 @media (min-width: 52em) {
@@ -54,7 +57,6 @@ p code {
     bottom: 0;
     overflow-y: scroll;
     width: 300px;
-    background: #f2f2f2;
     padding: 1em;
   }
   .content-container {
@@ -73,14 +75,23 @@ p code {
 }
 
 .toc a {
+  font-size: 0.85em;
   display: block;
 }
 .toc .class {
-  font-weight: 900;
-  border-bottom: 1px solid #c0c0c0;
+  position: relative;
+  font-size: 500;
   font-size: 1.1em;
-  padding-bottom: 0.5em;
-  margin: 0.5em 0;
+  margin: 1em 0 0.2em;
+}
+.toc .class::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  margin-left: -1em;
+  height: 100%;
+  width: 5px;
+  background: #b2b2ff;
 }
 .toc a.hide {
   display: none;
@@ -97,9 +108,10 @@ p code {
 }
 
 .main {
-  border-top: 3px solid #0C9DC2;
-  padding-top: 1em;
-  margin-top: 3em;
+  /*border-top: 3px solid #0C9DC2;*/
+  padding: 1em;
+  background: white;
+  margin-top: 1em;
 }
 .section-params {
   font-weight: 100;
@@ -189,17 +201,15 @@ h4:hover .anchorjs-link {
 
 .collapsible section {
   padding: 1em;
-  margin: 1em 0;
-  border: 1px solid #f2f2f2;
-  border-left: 3px solid #f2f2f2;
+  border-left: 1px solid #b2b2ff;
 }
 .collapsible .force-inline p,
 .collapsible .force-inline p a {
-  color: #999;
+  color: #333;
 }
-.collapsible > a code {
-  font-weight: 900;
-  color: #555;
+.collapsible > a {
+  display: block;
+  margin: 0.3em 0;
 }
 
 .fix-3 {
@@ -216,9 +226,10 @@ h4:hover .anchorjs-link {
 pre {
   border-radius: 3px;
   padding: 0.5em;
-  background: #23241f;
-  color: #cdd4d5;
+  background: #f6f6f6;
   overflow-x: scroll;
+  font-size: 0.85em;
+  line-height: 1.25em;
 }
 code {}
 .table-wrapper {
@@ -251,5 +262,9 @@ table td p {
 }
 
 .function {
-  margin: 0 0 1em;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1em;
+  font-size: 1em;
+  border-bottom: 1px solid #f2f2f2;
 }

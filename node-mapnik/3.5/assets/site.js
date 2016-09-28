@@ -37,4 +37,11 @@ document.getElementById('filter-input').addEventListener('keyup', function(e) {
       element.classList.add('hide');
     }
   }
+
+  // var githubAnchors = document.getElementsByClassName('github');
+  // for (var i = 0; i < githubAnchors.length; i++) {
+  //   var elem = githubAnchors[i];
+  //   var url = elem.href;
+  //   url = elem.href.replace('/documentation/', '/node-mapnik/').replace('/node_modules/mapnik', '')
+  // }
 });
