@@ -1,17 +1,13 @@
 # Mapnik Documentation
 
-A home Mapnik-related documentation. This repository is mostly updated from other repositories, such as Node Mapnik when we trigger a rebuild of docs. 
+A home Mapnik-related documentation. This repository is mostly updated from other repositories, such as Node Mapnik when we trigger a rebuild of docs.
 
-### Triggering rebuilds
+### Building docs
 
 **Node Mapnik**
 
-Builds are triggered via commit message codes. You commit message MUST include `[docs]` in order to rebuild docs in this repo. To change the version, in order to match `minor` semver, update the parameter in the [`.travis.yml`](https://github.com/mapnik/documentation/blob/88e3185396f7754eb937190dab737fe2b44d0e15/.travis.yml#L7).
+Documentation is built daily (if changes exist) by TravisCI cron jobs. Changes are always pulled from the Node Mapnik `master` branch. Node Mapnik theme is located in the `_theme/` directory and is a fork of the DocumentationJS default theme.
 
-Example commit message:
+If you need to generate documentation for Node Mapnik immediately (instead of waiting for the daily build) head to TravisCI and restart the `master` branch jobs.
 
-```
-git commit -m 'adding new feature [docs]'
-```
-
-*All hail **mapnikbot**!*
+##### *All hail **mapnikbot**!*

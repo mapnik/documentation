@@ -2,15 +2,14 @@
 
 VERSION=$1
 
-touch testfile.txt
-
 cd node_modules/documentation
 npm link
 cd ../..
 
-CONFIG=config/node.json
-THEME=node_modules/node-mapnik-theme/
-SOURCE=node_modules/mapnik/src/*.cpp
+CONFIG=./config/node.json
+THEME=./node_modules/node-mapnik-theme/
+SOURCE=./node_modules/mapnik/src/*.*pp
 SINK=./node-mapnik/${VERSION}
 
+# generate docs
 documentation build ${SOURCE} --polyglot -f html -o ${SINK} --github --name "Node Mapnik" --theme ${THEME} --config ${CONFIG}
