@@ -6140,7 +6140,7 @@ or height is not numeric.</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3086-L3103'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3176-L3193'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBufferSync' class='function'>
     fromBufferSync<span class='gray section-params'>(width, height, buffer)</span>
   </h2>
@@ -6217,7 +6217,7 @@ It is recommended that you do not use this method. Be warned!</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3267-L3281'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3357-L3371'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBytes' class='function'>
     fromBytes<span class='gray section-params'>(buffer, callback)</span>
   </h2>
@@ -6281,7 +6281,7 @@ mapnik.Image.fromBytesSync(buffer, <span class="hljs-function"><span class="hljs
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2722-L2738'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2754-L2773'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVG' class='function'>
     fromSVG<span class='gray section-params'>(filename, [options], callback)</span>
   </h2>
@@ -6325,6 +6325,16 @@ mapnik.Image.fromBytesSync(buffer, <span class="hljs-function"><span class="hljs
 your SVG at 50% the original size.</p>
 </td>
             </tr>
+            <tr class='param'>
+              <td>options.max_size</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+=
+ </td>
+              <td class='param-description'><p>the maximum allowed size of the svg dimensions * scale. The default is 2048.
+This option can be passed a smaller or larger size in order to control the final size of the image allocated for
+rasterizing the SVG.</p>
+</td>
+            </tr>
           <tr class='param'>
             <td>callback</td>
             <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
@@ -6359,7 +6369,7 @@ your SVG at 50% the original size.</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2899-L2915'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2960-L2979'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVGBytes' class='function'>
     fromSVGBytes<span class='gray section-params'>(path, [options], callback)</span>
   </h2>
@@ -6404,6 +6414,16 @@ your SVG at 50% the original size.</p>
 your SVG at 50% the original size.</p>
 </td>
             </tr>
+            <tr class='param'>
+              <td>options.max_size</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+=
+ </td>
+              <td class='param-description'><p>the maximum allowed size of the svg dimensions * scale. The default is 2048.
+This option can be passed a smaller or larger size in order to control the final size of the image allocated for
+rasterizing the SVG.</p>
+</td>
+            </tr>
           <tr class='param'>
             <td>callback</td>
             <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
@@ -6440,7 +6460,7 @@ mapnik.Image.fromSVGBytesSync(buffer, <span class="hljs-function"><span class="h
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2514-L2527'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2514-L2530'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVGBytesSync' class='function'>
     fromSVGBytesSync<span class='gray section-params'>(path, [options])</span>
   </h2>
@@ -6485,6 +6505,16 @@ mapnik.Image.fromSVGBytesSync(buffer, <span class="hljs-function"><span class="h
 your SVG at 50% the original size.</p>
 </td>
             </tr>
+            <tr class='param'>
+              <td>options.max_size</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+=
+ </td>
+              <td class='param-description'><p>the maximum allowed size of the svg dimensions * scale. The default is 2048.
+This option can be passed a smaller or larger size in order to control the final size of the image allocated for
+rasterizing the SVG.</p>
+</td>
+            </tr>
       </table>
     </div>
 
@@ -6518,7 +6548,7 @@ your SVG at 50% the original size.</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2533-L2546'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2536-L2552'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVGSync' class='function'>
     fromSVGSync<span class='gray section-params'>(filename, [options])</span>
   </h2>
@@ -6560,6 +6590,16 @@ your SVG at 50% the original size.</p>
  </td>
               <td class='param-description'><p>scale the image. For example passing <code>0.5</code> as scale would render
 your SVG at 50% the original size.</p>
+</td>
+            </tr>
+            <tr class='param'>
+              <td>options.max_size</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+=
+ </td>
+              <td class='param-description'><p>the maximum allowed size of the svg dimensions * scale. The default is 2048.
+This option can be passed a smaller or larger size in order to control the final size of the image allocated for
+rasterizing the SVG.</p>
 </td>
             </tr>
       </table>
@@ -6865,7 +6905,7 @@ img2.setPixel(<span class="hljs-number">1</span>,<span class="hljs-number">0</sp
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3808-L3837'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3898-L3927'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.composite' class='function'>
     composite<span class='gray section-params'>(image, [options], callback)</span>
   </h2>
@@ -7156,7 +7196,7 @@ img1.composite(img2, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L4069-L4079'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L4159-L4169'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.data' class='function'>
     data<span class='gray section-params'></span>
   </h2>
@@ -7280,7 +7320,7 @@ premultiplying.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3461-L3487'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3551-L3577'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.encode' class='function'>
     encode<span class='gray section-params'>([format], [options], callback)</span>
   </h2>
@@ -7378,7 +7418,7 @@ im.encode(<span class="hljs-string">'png'</span>, {<span class="hljs-attr">palet
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3374-L3389'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3464-L3479'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.encodeSync' class='function'>
     encodeSync<span class='gray section-params'>([format], [options])</span>
   </h2>
@@ -7711,7 +7751,7 @@ img.filter(<span class="hljs-string">'blur'</span>);
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3210-L3221'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3300-L3311'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBytesSync' class='function'>
     fromBytesSync<span class='gray section-params'>(buffer)</span>
   </h2>
@@ -8510,7 +8550,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3695-L3709'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3785-L3799'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.save' class='function'>
     save<span class='gray section-params'>(filename, [format], callback)</span>
   </h2>
@@ -8579,7 +8619,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3628-L3638'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3718-L3728'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.saveSync' class='function'>
     saveSync<span class='gray section-params'>(filename, [format])</span>
   </h2>
@@ -8771,7 +8811,7 @@ gray.setPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</sp
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3593-L3610'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3683-L3700'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.view' class='function'>
     view<span class='gray section-params'>(x, y, width, height)</span>
   </h2>
