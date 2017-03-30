@@ -6140,7 +6140,7 @@ or height is not numeric.</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3176-L3193'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3182-L3199'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBufferSync' class='function'>
     fromBufferSync<span class='gray section-params'>(width, height, buffer)</span>
   </h2>
@@ -6212,14 +6212,14 @@ It is recommended that you do not use this method. Be warned!</p>
       <div class='collapsible' id='Image.fromBytes'>
         <a href='#Image.fromBytes'>
           <code>
-            .fromBytes<span class='gray'>(buffer, callback)</span>
+            .fromBytes<span class='gray'>(buffer, [options], callback)</span>
           </code>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3357-L3371'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3363-L3380'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBytes' class='function'>
-    fromBytes<span class='gray section-params'>(buffer, callback)</span>
+    fromBytes<span class='gray section-params'>(buffer, [options], callback)</span>
   </h2>
   
   
@@ -6245,6 +6245,30 @@ It is recommended that you do not use this method. Be warned!</p>
 </td>
           </tr>
 
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+            <tr class='param'>
+              <td>options.premultiply</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+=
+ </td>
+              <td class='param-description'><p>Default false, if true, then the image will be premultiplied before being returned</p>
+</td>
+            </tr>
+            <tr class='param'>
+              <td>options.max_size</td>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+=
+ </td>
+              <td class='param-description'><p>the maximum allowed size of the image dimensions. The default is 2048.</p>
+</td>
+            </tr>
           <tr class='param'>
             <td>callback</td>
             <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
@@ -6281,7 +6305,7 @@ mapnik.Image.fromBytesSync(buffer, <span class="hljs-function"><span class="hljs
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2754-L2773'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2759-L2778'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVG' class='function'>
     fromSVG<span class='gray section-params'>(filename, [options], callback)</span>
   </h2>
@@ -6369,7 +6393,7 @@ rasterizing the SVG.</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2960-L2979'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2966-L2985'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVGBytes' class='function'>
     fromSVGBytes<span class='gray section-params'>(path, [options], callback)</span>
   </h2>
@@ -6460,7 +6484,7 @@ mapnik.Image.fromSVGBytesSync(buffer, <span class="hljs-function"><span class="h
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2514-L2530'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2519-L2535'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVGBytesSync' class='function'>
     fromSVGBytesSync<span class='gray section-params'>(path, [options])</span>
   </h2>
@@ -6548,7 +6572,7 @@ rasterizing the SVG.</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2536-L2552'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2541-L2557'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromSVGSync' class='function'>
     fromSVGSync<span class='gray section-params'>(filename, [options])</span>
   </h2>
@@ -6634,7 +6658,7 @@ rasterizing the SVG.</p>
         </a>
         <div class='collapser border px2 m2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2405-L2417'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2410-L2422'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.open' class='function'>
     open<span class='gray section-params'>(path, callback)</span>
   </h2>
@@ -6699,7 +6723,7 @@ rasterizing the SVG.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1047-L1061'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1048-L1062'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.clear' class='function'>
     clear<span class='gray section-params'>(callback)</span>
   </h2>
@@ -6755,7 +6779,7 @@ img.clear(<span class="hljs-function"><span class="hljs-keyword">function</span>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1006-L1018'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1007-L1019'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.clearSync' class='function'>
     clearSync<span class='gray section-params'></span>
   </h2>
@@ -6793,7 +6817,7 @@ img.clearSync();
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L554-L594'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L555-L595'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.compare' class='function'>
     compare<span class='gray section-params'>(image, [options])</span>
   </h2>
@@ -6905,7 +6929,7 @@ img2.setPixel(<span class="hljs-number">1</span>,<span class="hljs-number">0</sp
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3898-L3927'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3958-L3987'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.composite' class='function'>
     composite<span class='gray section-params'>(image, [options], callback)</span>
   </h2>
@@ -7023,7 +7047,7 @@ img1.composite(img2, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1460-L1476'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1461-L1477'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.copy' class='function'>
     copy<span class='gray section-params'>(type, [options], callback)</span>
   </h2>
@@ -7110,7 +7134,7 @@ img1.composite(img2, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1626-L1640'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1627-L1641'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.copySync' class='function'>
     copySync<span class='gray section-params'>(type, [options])</span>
   </h2>
@@ -7196,7 +7220,7 @@ img1.composite(img2, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L4159-L4169'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L4220-L4230'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.data' class='function'>
     data<span class='gray section-params'></span>
   </h2>
@@ -7239,7 +7263,7 @@ img1.composite(img2, {
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1287-L1295'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1288-L1296'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.demultiply' class='function'>
     demultiply<span class='gray section-params'>(callback)</span>
   </h2>
@@ -7288,7 +7312,7 @@ premultiplying</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1266-L1273'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1267-L1274'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.demultiplySync' class='function'>
     demultiplySync<span class='gray section-params'></span>
   </h2>
@@ -7320,7 +7344,7 @@ premultiplying.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3551-L3577'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3611-L3637'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.encode' class='function'>
     encode<span class='gray section-params'>([format], [options], callback)</span>
   </h2>
@@ -7418,7 +7442,7 @@ im.encode(<span class="hljs-string">'png'</span>, {<span class="hljs-attr">palet
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3464-L3479'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3524-L3539'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.encodeSync' class='function'>
     encodeSync<span class='gray section-params'>([format], [options])</span>
   </h2>
@@ -7498,7 +7522,7 @@ fs.writeFileSync(<span class="hljs-string">'myimage.png'</span>, buffer);</pre>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L874-L893'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L875-L894'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fill' class='function'>
     fill<span class='gray section-params'>(color, callback)</span>
   </h2>
@@ -7570,7 +7594,7 @@ img.fill(<span class="hljs-string">'rgba(255,255,255,0)'</span>, <span class="hl
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L783-L797'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L784-L798'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fillSync' class='function'>
     fillSync<span class='gray section-params'>(color)</span>
   </h2>
@@ -7630,7 +7654,7 @@ img.fillSync(<span class="hljs-keyword">new</span> mapnik.Color(<span class="hlj
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L700-L716'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L701-L717'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.filter' class='function'>
     filter<span class='gray section-params'>(filter, callback)</span>
   </h2>
@@ -7696,7 +7720,7 @@ img.filter(<span class="hljs-string">'sobel'</span>, <span class="hljs-function"
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L649-L661'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L650-L662'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.filterSync' class='function'>
     filterSync<span class='gray section-params'>(filter)</span>
   </h2>
@@ -7751,7 +7775,7 @@ img.filter(<span class="hljs-string">'blur'</span>);
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3300-L3311'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3306-L3317'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.fromBytesSync' class='function'>
     fromBytesSync<span class='gray section-params'>(buffer)</span>
   </h2>
@@ -7812,7 +7836,7 @@ img.filter(<span class="hljs-string">'blur'</span>);
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L411-L434'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L412-L435'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.getPixel' class='function'>
     getPixel<span class='gray section-params'>(x, y, [options])</span>
   </h2>
@@ -7905,7 +7929,7 @@ map.render(img, {},<span class="hljs-function"><span class="hljs-keyword">functi
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L290-L304'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L291-L305'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.getType' class='function'>
     getType<span class='gray section-params'></span>
   </h2>
@@ -7952,7 +7976,7 @@ map.render(img, {},<span class="hljs-function"><span class="hljs-keyword">functi
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2310-L2320'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2313-L2323'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.height' class='function'>
     height<span class='gray section-params'></span>
   </h2>
@@ -7995,7 +8019,7 @@ map.render(img, {},<span class="hljs-function"><span class="hljs-keyword">functi
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1335-L1348'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1336-L1349'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.isSolid' class='function'>
     isSolid<span class='gray section-params'></span>
   </h2>
@@ -8042,7 +8066,7 @@ img.setPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</spa
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1418-L1430'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1419-L1431'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.isSolidSync' class='function'>
     isSolidSync<span class='gray section-params'></span>
   </h2>
@@ -8087,7 +8111,7 @@ than one.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2327-L2336'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2330-L2339'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.openSync' class='function'>
     openSync<span class='gray section-params'>(path)</span>
   </h2>
@@ -8147,7 +8171,7 @@ than one.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2272-L2286'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2275-L2289'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.painted' class='function'>
     painted<span class='gray section-params'></span>
   </h2>
@@ -8194,7 +8218,7 @@ to manually set the <code>painted</code> value.</p>
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1167-L1180'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1168-L1181'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.premultiplied' class='function'>
     premultiplied<span class='gray section-params'></span>
   </h2>
@@ -8240,7 +8264,7 @@ img.premultiplySync()
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1211-L1224'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1212-L1225'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.premultiply' class='function'>
     premultiply<span class='gray section-params'>(callback)</span>
   </h2>
@@ -8295,7 +8319,7 @@ img.premultiply(<span class="hljs-function"><span class="hljs-keyword">function<
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1188-L1198'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1189-L1199'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.premultiplySync' class='function'>
     premultiplySync<span class='gray section-params'></span>
   </h2>
@@ -8331,7 +8355,7 @@ img.premultiplySync();
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1759-L1779'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1760-L1780'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.resize' class='function'>
     resize<span class='gray section-params'>(width, height, [options], callback)</span>
   </h2>
@@ -8442,7 +8466,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2087-L2105'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2089-L2107'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.resizeSync' class='function'>
     resizeSync<span class='gray section-params'>(width, height, [options])</span>
   </h2>
@@ -8550,7 +8574,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3785-L3799'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3845-L3859'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.save' class='function'>
     save<span class='gray section-params'>(filename, [format], callback)</span>
   </h2>
@@ -8619,7 +8643,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3718-L3728'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3778-L3788'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.saveSync' class='function'>
     saveSync<span class='gray section-params'>(filename, [format])</span>
   </h2>
@@ -8678,7 +8702,7 @@ img.resize(<span class="hljs-number">8</span>, <span class="hljs-number">8</span
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1119-L1135'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L1120-L1136'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.setGrayScaleToAlpha' class='function'>
     setGrayScaleToAlpha<span class='gray section-params'>(color)</span>
   </h2>
@@ -8736,7 +8760,7 @@ image.setGrayScaleToAlpha();
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L491-L504'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L492-L505'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.setPixel' class='function'>
     setPixel<span class='gray section-params'>(x, y, numeric)</span>
   </h2>
@@ -8811,7 +8835,7 @@ gray.setPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</sp
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3683-L3700'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L3743-L3760'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.view' class='function'>
     view<span class='gray section-params'>(x, y, width, height)</span>
   </h2>
@@ -8896,7 +8920,7 @@ gray.setPixel(<span class="hljs-number">0</span>,<span class="hljs-number">0</sp
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2293-L2303'>./node_modules/mapnik/src/mapnik_image.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_image.cpp#L2296-L2306'>./node_modules/mapnik/src/mapnik_image.cpp</a>
   <h2 id='Image.width' class='function'>
     width<span class='gray section-params'></span>
   </h2>
