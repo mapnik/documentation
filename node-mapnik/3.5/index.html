@@ -159,6 +159,11 @@
             #resize
           </a>
           <a
+            href='#Map.save'
+            class=' '>
+            #save
+          </a>
+          <a
             href='#Map.scale'
             class=' '>
             #scale
@@ -167,6 +172,11 @@
             href='#Map.scaleDenominator'
             class=' '>
             #scaleDenominator
+          </a>
+          <a
+            href='#Map.toXML'
+            class=' '>
+            #toXML
           </a>
         <a
           href='#VectorTile'
@@ -2788,7 +2798,7 @@ map.queryMapPoint(<span class="hljs-number">-12957605.0331</span>, <span class="
         </a>
         <div class='collapser border px2'>
         <section class='py2 clearfix'>
-    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_map.cpp#L1640-L1699'>./node_modules/mapnik/src/mapnik_map.cpp</a>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_map.cpp#L1660-L1719'>./node_modules/mapnik/src/mapnik_map.cpp</a>
   <h2 id='Map.render' class='function'>
     render<span class='gray section-params'>(renderable, [options])</span>
   </h2>
@@ -3053,6 +3063,58 @@ map.render(vtile, {}, <span class="hljs-function"><span class="hljs-keyword">fun
 </section>
         </div>
       </div>
+      <div class='collapsible' id='Map.save'>
+        <a href='#Map.save'>
+          <code>
+            #save<span class='gray'>(file)</span>
+          </code>
+        </a>
+        <div class='collapser border px2'>
+        <section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_map.cpp#L1462-L1471'>./node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='Map.save' class='function'>
+    save<span class='gray section-params'>(file)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Writes the map to an xml file</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>file</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>path</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'>map.save(<span class="hljs-string">"path/to/map.xml"</span>);</pre>
+
+
+
+
+</section>
+        </div>
+      </div>
       <div class='collapsible' id='Map.scale'>
         <a href='#Map.scale'>
           <code>
@@ -3125,6 +3187,40 @@ units like meters.</p>
       </div>
 
 
+
+
+
+
+</section>
+        </div>
+      </div>
+      <div class='collapsible' id='Map.toXML'>
+        <a href='#Map.toXML'>
+          <code>
+            #toXML<span class='gray'></span>
+          </code>
+        </a>
+        <div class='collapser border px2'>
+        <section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ab56f71bfdf76228db5c693cd4f29f65a5052f96/./node_modules/mapnik/src/mapnik_map.cpp#L1488-L1496'>./node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='Map.toXML' class='function'>
+    toXML<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Converts the map to an XML string</p>
+
+  
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> xml = map.toXML();</pre>
 
 
 
