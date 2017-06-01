@@ -18,3 +18,7 @@ SINK=./node-mapnik/${MINOR_VERSION}
 
 # build the documentation in the folder named after the minor version
 documentation build ${SOURCE} --polyglot -f html -o ${SINK} --github --name "Node Mapnik" --theme ${THEME} --config ${CONFIG}
+
+# regenerate the index.html file to forward to the most recent minor version
+HTML="<!DOCTYPE html><html><head><meta http-equiv='content-type' content='text/html; charset=utf-8' /><meta http-equiv='refresh' content='0;url=$MINOR_VERSION/' /></head></html>"
+echo $HTML > ./node-mapnik/index.html
