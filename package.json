@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "documentation": "4.0.0-beta2",
-    "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
+    "mapnik": "git@github.com:mapnik/node-mapnik.git#v3.4.19",
     "node-mapnik-theme": "0.0.2"
   }
 }

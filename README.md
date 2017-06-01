@@ -1,17 +1,9 @@
 # Mapnik Documentation
 
-A home Mapnik-related documentation. This repository is mostly updated from other repositories, such as Node Mapnik when we trigger a rebuild of docs. 
+The home for Mapnik documentation. Currently this only builds Node Mapnik documentation. Here's how it works:
 
-### Triggering rebuilds
-
-**Node Mapnik**
-
-Builds are triggered via commit message codes. You commit message MUST include `[docs]` in order to rebuild docs in this repo. To change the version, in order to match `minor` semver, update the parameter in the [`.travis.yml`](https://github.com/mapnik/documentation/blob/88e3185396f7754eb937190dab737fe2b44d0e15/.travis.yml#L7).
-
-Example commit message:
-
-```
-git commit -m 'adding new feature [docs]'
-```
-
-*All hail **mapnikbot**!*
+1. A TravisCI cron job runs every day and runs the scripts/generate.sh script
+1. This clones the Node Mapnik repository from master, which has all sorts of JSDoc comments in it
+1. determines which minor version we are building docs for (i.e. 3.5, 3.6)
+1. Runs `documentation` to generate an HTML file from the JSDoc comments and puts it into a folder named after the minor version
+1. Runs the scripts/deploy.sh script to put these changes to the gh-pages branch which can be viewed from mapnik.org/documentation

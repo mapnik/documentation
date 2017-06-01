@@ -1,0 +1,5804 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Node Mapnik  | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/mapnik.css' type='text/css' rel='stylesheet' />
+  <link href='assets/highlight.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation cf'>
+  
+  <div class='toc-container'>
+    <h1 class='no-anchor title'>Node Mapnik</h1>
+    <div class='mb1'><code></code></div>
+    <input
+      placeholder='Filter'
+      id='filter-input'
+      class='search'
+      type='text' />
+    <div id='toc' class='toc'>
+        <a
+          href='#add_layer'
+          class='class'>
+          add_layer
+        </a>
+        <a
+          href='#clear'
+          class='class'>
+          clear
+        </a>
+        <a
+          href='#clone'
+          class='class'>
+          clone
+        </a>
+        <a
+          href='#font'
+          class='class'>
+          font
+        </a>
+        <a
+          href='#fontDirectory'
+          class='class'>
+          fontDirectory
+        </a>
+        <a
+          href='#fontFiles'
+          class='class'>
+          fontFiles
+        </a>
+        <a
+          href='#fromStringSync'
+          class='class'>
+          fromStringSync
+        </a>
+        <a
+          href='#fromStringSync'
+          class='class'>
+          fromStringSync
+        </a>
+        <a
+          href='#get_layer'
+          class='class'>
+          get_layer
+        </a>
+        <a
+          href='#layers'
+          class='class'>
+          layers
+        </a>
+        <a
+          href='#load'
+          class='class'>
+          load
+        </a>
+        <a
+          href='#loadSync'
+          class='class'>
+          loadSync
+        </a>
+        <a
+          href='#resize'
+          class='class'>
+          resize
+        </a>
+        <a
+          href='#scale'
+          class='class'>
+          scale
+        </a>
+        <a
+          href='#scaleDenominator'
+          class='class'>
+          scaleDenominator
+        </a>
+        <a
+          href='#addData'
+          class='class'>
+          addData
+        </a>
+        <a
+          href='#addGeoJSON'
+          class='class'>
+          addGeoJSON
+        </a>
+        <a
+          href='#clear'
+          class='class'>
+          clear
+        </a>
+        <a
+          href='#compositeSync'
+          class='class'>
+          compositeSync
+        </a>
+        <a
+          href='#empty'
+          class='class'>
+          empty
+        </a>
+        <a
+          href='#getData'
+          class='class'>
+          getData
+        </a>
+        <a
+          href='#getDataSync'
+          class='class'>
+          getDataSync
+        </a>
+        <a
+          href='#height'
+          class='class'>
+          height
+        </a>
+        <a
+          href='#isSolid'
+          class='class'>
+          isSolid
+        </a>
+        <a
+          href='#isSolidSync'
+          class='class'>
+          isSolidSync
+        </a>
+        <a
+          href='#names'
+          class='class'>
+          names
+        </a>
+        <a
+          href='#painted'
+          class='class'>
+          painted
+        </a>
+        <a
+          href='#query'
+          class='class'>
+          query
+        </a>
+        <a
+          href='#reportGeometrySimplicity'
+          class='class'>
+          reportGeometrySimplicity
+        </a>
+        <a
+          href='#reportGeometrySimplicitySync'
+          class='class'>
+          reportGeometrySimplicitySync
+        </a>
+        <a
+          href='#reportGeometryValidity'
+          class='class'>
+          reportGeometryValidity
+        </a>
+        <a
+          href='#reportGeometryValiditySync'
+          class='class'>
+          reportGeometryValiditySync
+        </a>
+        <a
+          href='#setData'
+          class='class'>
+          setData
+        </a>
+        <a
+          href='#toGeoJSON'
+          class='class'>
+          toGeoJSON
+        </a>
+        <a
+          href='#toGeoJSONSync'
+          class='class'>
+          toGeoJSONSync
+        </a>
+        <a
+          href='#toJSON'
+          class='class'>
+          toJSON
+        </a>
+        <a
+          href='#width'
+          class='class'>
+          width
+        </a>
+        <a
+          href='#addField'
+          class='class'>
+          addField
+        </a>
+        <a
+          href='#addField'
+          class='class'>
+          addField
+        </a>
+        <a
+          href='#encodeSync'
+          class='class'>
+          encodeSync
+        </a>
+        <a
+          href='#height'
+          class='class'>
+          height
+        </a>
+        <a
+          href='#view'
+          class='class'>
+          view
+        </a>
+        <a
+          href='#width'
+          class='class'>
+          width
+        </a>
+        <a
+          href='#attributes'
+          class='class'>
+          attributes
+        </a>
+        <a
+          href='#extent'
+          class='class'>
+          extent
+        </a>
+        <a
+          href='#geometry'
+          class='class'>
+          geometry
+        </a>
+        <a
+          href='#id'
+          class='class'>
+          id
+        </a>
+        <a
+          href='#toJSON'
+          class='class'>
+          toJSON
+        </a>
+        <a
+          href='#fromJSON'
+          class='class'>
+          fromJSON
+        </a>
+        <a
+          href='#clear'
+          class='class'>
+          clear
+        </a>
+        <a
+          href='#clearSync'
+          class='class'>
+          clearSync
+        </a>
+        <a
+          href='#compare'
+          class='class'>
+          compare
+        </a>
+        <a
+          href='#composite'
+          class='class'>
+          composite
+        </a>
+        <a
+          href='#copy'
+          class='class'>
+          copy
+        </a>
+        <a
+          href='#copySync'
+          class='class'>
+          copySync
+        </a>
+        <a
+          href='#data'
+          class='class'>
+          data
+        </a>
+        <a
+          href='#demultiply'
+          class='class'>
+          demultiply
+        </a>
+        <a
+          href='#demultiplySync'
+          class='class'>
+          demultiplySync
+        </a>
+        <a
+          href='#encode'
+          class='class'>
+          encode
+        </a>
+        <a
+          href='#encodeSync'
+          class='class'>
+          encodeSync
+        </a>
+        <a
+          href='#fill'
+          class='class'>
+          fill
+        </a>
+        <a
+          href='#fillSync'
+          class='class'>
+          fillSync
+        </a>
+        <a
+          href='#filter'
+          class='class'>
+          filter
+        </a>
+        <a
+          href='#filterSync'
+          class='class'>
+          filterSync
+        </a>
+        <a
+          href='#getPixel'
+          class='class'>
+          getPixel
+        </a>
+        <a
+          href='#getType'
+          class='class'>
+          getType
+        </a>
+        <a
+          href='#height'
+          class='class'>
+          height
+        </a>
+        <a
+          href='#isSolidSync'
+          class='class'>
+          isSolidSync
+        </a>
+        <a
+          href='#premultiplied'
+          class='class'>
+          premultiplied
+        </a>
+        <a
+          href='#premultiply'
+          class='class'>
+          premultiply
+        </a>
+        <a
+          href='#premultiplySync'
+          class='class'>
+          premultiplySync
+        </a>
+        <a
+          href='#resize'
+          class='class'>
+          resize
+        </a>
+        <a
+          href='#resizeSync'
+          class='class'>
+          resizeSync
+        </a>
+        <a
+          href='#save'
+          class='class'>
+          save
+        </a>
+        <a
+          href='#saveSync'
+          class='class'>
+          saveSync
+        </a>
+        <a
+          href='#setPixel'
+          class='class'>
+          setPixel
+        </a>
+        <a
+          href='#view'
+          class='class'>
+          view
+        </a>
+        <a
+          href='#width'
+          class='class'>
+          width
+        </a>
+        <a
+          href='#fromBufferSync'
+          class='class'>
+          fromBufferSync
+        </a>
+        <a
+          href='#fromBytes'
+          class='class'>
+          fromBytes
+        </a>
+        <a
+          href='#fromSVG'
+          class='class'>
+          fromSVG
+        </a>
+        <a
+          href='#fromSVGBytes'
+          class='class'>
+          fromSVGBytes
+        </a>
+        <a
+          href='#describe'
+          class='class'>
+          describe
+        </a>
+        <a
+          href='#extent'
+          class='class'>
+          extent
+        </a>
+        <a
+          href='#extent'
+          class='class'>
+          extent
+        </a>
+        <a
+          href='#toJSON'
+          class='class'>
+          toJSON
+        </a>
+        <a
+          href='#toJSONSync'
+          class='class'>
+          toJSONSync
+        </a>
+        <a
+          href='#toWKB'
+          class='class'>
+          toWKB
+        </a>
+        <a
+          href='#toWKT'
+          class='class'>
+          toWKT
+        </a>
+        <a
+          href='#type'
+          class='class'>
+          type
+        </a>
+        <a
+          href='#forward'
+          class='class'>
+          forward
+        </a>
+        <a
+          href='#inverse'
+          class='class'>
+          inverse
+        </a>
+        <a
+          href='#get_premultiplied'
+          class='class'>
+          get_premultiplied
+        </a>
+        <a
+          href='#hex'
+          class='class'>
+          hex
+        </a>
+        <a
+          href='#set_premultiplied'
+          class='class'>
+          set_premultiplied
+        </a>
+        <a
+          href='#toString'
+          class='class'>
+          toString
+        </a>
+        <a
+          href='#next'
+          class='class'>
+          next
+        </a>
+        <a
+          href='#mapnik'
+          class='class'>
+          mapnik
+        </a>
+          <a
+            href='#mapnik.compositeOp'
+            class=''>
+            .compositeOp
+          </a>
+          <a
+            href='#mapnik.imageScaling'
+            class=''>
+            .imageScaling
+          </a>
+          <a
+            href='#mapnik.imageType'
+            class=''>
+            .imageType
+          </a>
+          <a
+            href='#mapnik.polygonFillType'
+            class=''>
+            .polygonFillType
+          </a>
+        <a
+          href='#mapnik.blend'
+          class='class'>
+          mapnik.blend
+        </a>
+        <a
+          href='#mapnik.Color'
+          class='class'>
+          mapnik.Color
+        </a>
+        <a
+          href='#mapnik.Datasource'
+          class='class'>
+          mapnik.Datasource
+        </a>
+        <a
+          href='#mapnik.Feature'
+          class='class'>
+          mapnik.Feature
+        </a>
+        <a
+          href='#mapnik.Featureset'
+          class='class'>
+          mapnik.Featureset
+        </a>
+        <a
+          href='#mapnik.Geometry'
+          class='class'>
+          mapnik.Geometry
+        </a>
+        <a
+          href='#mapnik.Grid'
+          class='class'>
+          mapnik.Grid
+        </a>
+        <a
+          href='#mapnik.Image'
+          class='class'>
+          mapnik.Image
+        </a>
+        <a
+          href='#mapnik.ImageView'
+          class='class'>
+          mapnik.ImageView
+        </a>
+        <a
+          href='#mapnik.Map'
+          class='class'>
+          mapnik.Map
+        </a>
+        <a
+          href='#mapnik.Projection'
+          class='class'>
+          mapnik.Projection
+        </a>
+        <a
+          href='#mapnik.VectorTile'
+          class='class'>
+          mapnik.VectorTile
+        </a>
+    </div>
+  </div>
+
+  <div class='content-container'>
+    <div class='content'>
+    <div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L819-L826'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='add_layer' class='function'>
+    add_layer<span class='gray section-params'>(new)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Add a new layer to this map</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>new</td>
+            <td>mapnik.Layer
+ </td>
+            <td class='param-description'><p>layer</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L908-L914'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='clear' class='function'>
+    clear<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Remove all layers and styles from this map</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L1349-L1357'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='clone' class='function'>
+    clone<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Clone this map object, returning a value which can be changed
+without mutating the original</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Map
+</code>
+      :
+      <div class='force-inline'>
+        <p>clone</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L466-L472'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='font' class='function'>
+    font<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get all of the fonts currently registered as part of this map</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L506-L512'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='fontDirectory' class='function'>
+    fontDirectory<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the currently-registered font directory, if any</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code>(
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+|
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>
+)
+</code>
+      :
+      <div class='force-inline'>
+        <p>fonts</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L486-L493'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='fontFiles' class='function'>
+    fontFiles<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get all of the fonts currently registered as part of this map, as a mapping
+from font to font file</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>fonts</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L1228-L1243'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='fromStringSync' class='function'>
+    fromStringSync<span class='gray section-params'>(stylesheet, [options], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Load styles, layers, and other information for this map from a Mapnik
+XML stylesheet given as a string.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>stylesheet</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>contents</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+map.fromStringSync(fs.readFileSync(<span class="hljs-string">'./style.xml'</span>, <span class="hljs-string">'utf8'</span>), <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{
+  <span class="hljs-comment">// details loaded</span>
+});</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L1150-L1162'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='fromStringSync' class='function'>
+    fromStringSync<span class='gray section-params'>(stylesheet, [options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Load styles, layers, and other information for this map from a Mapnik
+XML stylesheet given as a string.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>stylesheet</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>contents</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+map.fromStringSync(fs.readFileSync(<span class="hljs-string">'./style.xml'</span>, <span class="hljs-string">'utf8'</span>));</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L844-L853'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='get_layer' class='function'>
+    get_layer<span class='gray section-params'>(layer)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get a layer out of this map, given a name or index</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>layer</td>
+            <td>(
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+|
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+)
+ </td>
+            <td class='param-description'><p>name or index</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Layer
+</code>
+      :
+      <div class='force-inline'>
+        <p>the layer</p>
+
+      </div>
+
+    <h4>Throws</h4>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>
+: <div class='force-inline'><p>if index is incorrect or layer is not found</p>
+</div></li>
+    </ul>
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L799-L806'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='layers' class='function'>
+    layers<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get all of the currently-added layers in this map</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L961-L971'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='load' class='function'>
+    load<span class='gray section-params'>(stylesheet, [options], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Load styles, layers, and other information for this map from a Mapnik
+XML stylesheet.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>stylesheet</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>path</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L1072-L1083'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='loadSync' class='function'>
+    loadSync<span class='gray section-params'>(stylesheet, [options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Load styles, layers, and other information for this map from a Mapnik
+XML stylesheet.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>stylesheet</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>path</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'>map.loadSync(<span class="hljs-string">'./style.xml'</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L922-L930'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='resize' class='function'>
+    resize<span class='gray section-params'>(width, height)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Give this map new dimensions</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L524-L531'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='scale' class='function'>
+    scale<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the map&#x27;s scale factor. This is the ratio between pixels and geographical
+units like meters.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>scale</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L538-L545'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='scaleDenominator' class='function'>
+    scaleDenominator<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the map&#x27;s scale denominator.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>scale denominator</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3072-L3080'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='addData' class='function'>
+    addData<span class='gray section-params'>(raw, name)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Add raw data to this tile as a Buffer</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>raw</td>
+            <td><a href="https://nodejs.org/api/buffer.html">Buffer</a>
+ </td>
+            <td class='param-description'><p>data</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>name</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>of the layer to be added</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L2848-L2856'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='addGeoJSON' class='function'>
+    addGeoJSON<span class='gray section-params'>(geojson, name)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Add features to this tile from a GeoJSON string</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>geojson</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>as a string</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>name</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>of the layer to be added</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4237-L4244'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='clear' class='function'>
+    clear<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Remove all data from this vector tile</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L609-L616'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='compositeSync' class='function'>
+    compositeSync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Composite an array of vector tiles into one vector tile</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L1324-L1332'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='empty' class='function'>
+    empty<span class='gray section-params'>(whether)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Return whether this vector tile is empty - whether it has no
+layers and no features</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>whether</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+ </td>
+            <td class='param-description'><p>the layer is empty</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3681-L3690'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='getData' class='function'>
+    getData<span class='gray section-params'>(map, renderable, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Render this vector tile to a surface, like a <a href="#mapnik.Image">mapnik.Image</a></p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>map</td>
+            <td>mapnik.Map
+ </td>
+            <td class='param-description'><p>object</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>renderable</td>
+            <td>mapnik.Image
+ </td>
+            <td class='param-description'><p>surface</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3260-L3267'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='getDataSync' class='function'>
+    getDataSync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the data in this vector tile as a buffer</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://nodejs.org/api/buffer.html">Buffer</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>raw data</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L1367-L1374'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='height' class='function'>
+    height<span class='gray section-params'>(height)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the vector tile&#x27;s height</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4360-L4367'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='isSolid' class='function'>
+    isSolid<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Test whether this tile is solid - whether it has features</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4308-L4315'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='isSolidSync' class='function'>
+    isSolidSync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Test whether this tile is solid - whether it has features</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>whether the tile is solid</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L1289-L1296'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='names' class='function'>
+    names<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the names of all of the layers in this vector tile</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L1381-L1388'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='painted' class='function'>
+    painted<span class='gray section-params'>(painted)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get whether the vector tile has been painted</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>painted</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L1408-L1419'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='query' class='function'>
+    query<span class='gray section-params'>(longitude, latitude, [options], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Query a vector tile by longitude and latitude</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>longitude</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>latitude</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{tolerance:0}</code>)</td>
+            <td class='param-description'><p>tolerance: allow results that
+are not exactly on this longitude, latitude position.</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4685-L4692'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='reportGeometrySimplicity' class='function'>
+    reportGeometrySimplicity<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Count the number of non OGC simple geometries</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4625-L4632'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='reportGeometrySimplicitySync' class='function'>
+    reportGeometrySimplicitySync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Count the number of geometries that are not OGC simple</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>number of features that are not simple</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4750-L4757'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='reportGeometryValidity' class='function'>
+    reportGeometryValidity<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Count the number of non OGC valid geometries</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L4655-L4662'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='reportGeometryValiditySync' class='function'>
+    reportGeometryValiditySync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Count the number of geometries that are not OGC valid</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>number of features that are not valid</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L3162-L3170'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='setData' class='function'>
+    setData<span class='gray section-params'>(raw, name)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Replace the data in this vector tile with new raw data</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>raw</td>
+            <td><a href="https://nodejs.org/api/buffer.html">Buffer</a>
+ </td>
+            <td class='param-description'><p>data</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>name</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>of the layer to be added</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L2657-L2665'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='toGeoJSON' class='function'>
+    toGeoJSON<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get a <a href="http://geojson.org/">GeoJSON</a> representation of this tile</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>stringified GeoJSON of all the features in this tile.</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L2447-L2454'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='toGeoJSONSync' class='function'>
+    toGeoJSONSync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get a <a href="http://geojson.org/">GeoJSON</a> representation of this tile</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>stringified GeoJSON of all the features in this tile.</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L2247-L2255'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='toJSON' class='function'>
+    toJSON<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get a JSON representation of this tile</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>json representation of this tile with name, extent,
+and version properties</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L1353-L1360'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='width' class='function'>
+    width<span class='gray section-params'>(width)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the vector tile&#x27;s width</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_grid.cpp#L256-L262'>node_modules/mapnik/src/mapnik_grid.cpp</a>
+  <h2 id='addField' class='function'>
+    addField<span class='gray section-params'>(field)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Add a field to this grid&#x27;s output</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>field</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_grid.cpp#L283-L289'>node_modules/mapnik/src/mapnik_grid.cpp</a>
+  <h2 id='addField' class='function'>
+    addField<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get all of this grid&#x27;s fields</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_grid.cpp#L335-L342'>node_modules/mapnik/src/mapnik_grid.cpp</a>
+  <h2 id='encodeSync' class='function'>
+    encodeSync<span class='gray section-params'>([options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get a constrained view of this field given x, y, width, height parameters.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{resolution:4,features:false}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>an encoded field with <code>grid</code>, <code>keys</code>, and <code>data</code> members.</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_grid.cpp#L225-L231'>node_modules/mapnik/src/mapnik_grid.cpp</a>
+  <h2 id='height' class='function'>
+    height<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get this grid&#x27;s height</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>height</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_grid.cpp#L307-L317'>node_modules/mapnik/src/mapnik_grid.cpp</a>
+  <h2 id='view' class='function'>
+    view<span class='gray section-params'>(x, y, width, height)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get a constrained view of this field given x, y, width, height parameters.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>x</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>y</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Grid
+</code>
+      :
+      <div class='force-inline'>
+        <p>a grid constrained to this new view</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_grid.cpp#L212-L218'>node_modules/mapnik/src/mapnik_grid.cpp</a>
+  <h2 id='width' class='function'>
+    width<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get this grid&#x27;s width</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>width</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_feature.cpp#L171-L178'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+  <h2 id='attributes' class='function'>
+    attributes<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the feature&#x27;s attributes as an object.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>attributes</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_feature.cpp#L150-L157'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+  <h2 id='extent' class='function'>
+    extent<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the feature&#x27;s extent</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_feature.cpp#L196-L203'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+  <h2 id='geometry' class='function'>
+    geometry<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the feature&#x27;s attributes as a Mapnik geometry.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Geometry
+</code>
+      :
+      <div class='force-inline'>
+        <p>geometry</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_feature.cpp#L138-L143'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+  <h2 id='id' class='function'>
+    id<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>id the feature&#x27;s internal id</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_feature.cpp#L210-L217'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+  <h2 id='toJSON' class='function'>
+    toJSON<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Generate and return a GeoJSON representation of this feature</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>geojson Feature object in stringified GeoJSON</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_feature.cpp#L92-L99'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+  <h2 id='fromJSON' class='function'>
+    fromJSON<span class='gray section-params'>(geojson)</span>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>geojson</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>string</p>
+<p>Create a feature from a GeoJSON representation.</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L968-L975'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='clear' class='function'>
+    clear<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Make this image transparent, removing all image data from it.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L927-L939'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='clearSync' class='function'>
+    clearSync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Make this image transparent.</p>
+
+  
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">5</span>,<span class="hljs-number">5</span>);
+im.fillSync(<span class="hljs-number">1</span>);
+assert.equal(im.getPixel(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), <span class="hljs-number">1</span>);
+im.clearSync();
+assert.equal(im.getPixel(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), <span class="hljs-number">0</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L525-L535'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='compare' class='function'>
+    compare<span class='gray section-params'>(other, [options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Compare two images visually. This is useful for algorithms and tests that
+confirm whether a certain image has changed significantly.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>other</td>
+            <td>mapnik.Image
+ </td>
+            <td class='param-description'><p>another image instance</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{threshold:16,alpha:true}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>quantified visual difference between these two images</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L3448-L3457'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='composite' class='function'>
+    composite<span class='gray section-params'>(other, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Overlay this image with another image, creating a layered composite as
+a new image</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>other</td>
+            <td>mapnik.Image
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1327-L1336'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='copy' class='function'>
+    copy<span class='gray section-params'>(type, [options], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Copy this image data so that changes can be made to a clone of it.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>type</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1486-L1495'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='copySync' class='function'>
+    copySync<span class='gray section-params'>(type, [options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Copy this image data so that changes can be made to a clone of it.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>type</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Image
+</code>
+      :
+      <div class='force-inline'>
+        <p>copy</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L3688-L3694'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='data' class='function'>
+    data<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Return a copy of the pixel data in this image as a buffer</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1168-L1176'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='demultiply' class='function'>
+    demultiply<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Demultiply the pixels in this image, asynchronously. The opposite of
+premultiplying</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1147-L1154'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='demultiplySync' class='function'>
+    demultiplySync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Demultiply the pixels in this image. The opposite of
+premultiplying</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L3125-L3139'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='encode' class='function'>
+    encode<span class='gray section-params'>([format], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Encode this image into a buffer of encoded data</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>format</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+=
+  (<code>png</code>)</td>
+            <td class='param-description'><p>image format</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code><a href="https://nodejs.org/api/buffer.html">Buffer</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>encoded image data</p>
+
+      </div>
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+myImage.encode(<span class="hljs-string">'png'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, encoded</span>) </span>{
+  fs.writeFileSync(<span class="hljs-string">'myimage.png'</span>, encoded);
+});</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L3042-L3053'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='encodeSync' class='function'>
+    encodeSync<span class='gray section-params'>([format])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Encode this image into a buffer of encoded data</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>format</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+=
+  (<code>png</code>)</td>
+            <td class='param-description'><p>image format</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code><a href="https://nodejs.org/api/buffer.html">Buffer</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>encoded image data</p>
+
+      </div>
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+fs.writeFileSync(<span class="hljs-string">'myimage.png'</span>, myImage.encodeSync(<span class="hljs-string">'png'</span>));</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L800-L814'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='fill' class='function'>
+    fill<span class='gray section-params'>(color, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Asynchronously fill this image with a given color.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>color</td>
+            <td>(
+mapnik.Color
+|
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+)
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>);
+im.fill(<span class="hljs-number">1</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, im_res</span>) </span>{
+  <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+  assert.equal(im_res.getPixel(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), <span class="hljs-number">1</span>);
+});</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L721-L728'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='fillSync' class='function'>
+    fillSync<span class='gray section-params'>(color)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Fill this image with a given color</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>color</td>
+            <td>(
+mapnik.Color
+|
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+)
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L636-L650'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='filter' class='function'>
+    filter<span class='gray section-params'>(filter, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Asynchronously filter this image.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>filter</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>);
+im.filter(<span class="hljs-string">"blur"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, im_res</span>) </span>{
+  <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+  assert.equal(im_res.getPixel(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), <span class="hljs-number">1</span>);
+});</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L595-L602'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='filterSync' class='function'>
+    filterSync<span class='gray section-params'>(filter)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Filter this image</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>filter</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L394-L411'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='getPixel' class='function'>
+    getPixel<span class='gray section-params'>(x, y, options)</span>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>x</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'><p>position within image from top left</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>y</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'><p>position within image from top left</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+ </td>
+            <td class='param-description'><p>the only valid option is <code>get_color</code>, which
+should be a <code>boolean</code>.</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>color</p>
+
+      </div>
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
+<span class="hljs-keyword">var</span> view = im.view(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
+<span class="hljs-keyword">var</span> pixel = view.getPixel(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, {<span class="hljs-attr">get_color</span>:<span class="hljs-literal">true</span>});
+assert.equal(pixel.r, <span class="hljs-number">0</span>);
+assert.equal(pixel.g, <span class="hljs-number">0</span>);
+assert.equal(pixel.b, <span class="hljs-number">0</span>);
+assert.equal(pixel.a, <span class="hljs-number">0</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L280-L287'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='getType' class='function'>
+    getType<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Determine the image type</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>Number of the image type</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L2073-L2080'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='height' class='function'>
+    height<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get this image&#x27;s height</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>height</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1285-L1297'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='isSolidSync' class='function'>
+    isSolidSync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Determine whether the image is solid - whether it has alpha values of greater
+than one.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>whether the image is solid</p>
+
+      </div>
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
+<span class="hljs-keyword">var</span> view = im.view(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
+assert.equal(view.isSolidSync(), <span class="hljs-literal">true</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1064-L1071'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='premultiplied' class='function'>
+    premultiplied<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Determine whether the given image is premultiplied.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>premultiplied true if the image is premultiplied</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1098-L1105'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='premultiply' class='function'>
+    premultiply<span class='gray section-params'>(callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Premultiply the pixels in this image, asynchronously</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1079-L1085'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='premultiplySync' class='function'>
+    premultiplySync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Premultiply the pixels in this image</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1612-L1622'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='resize' class='function'>
+    resize<span class='gray section-params'>(width, height, [options], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Create a copy this image that is resized</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L1899-L1909'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='resizeSync' class='function'>
+    resizeSync<span class='gray section-params'>(width, height, [options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Make a resized copy of an image</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Image
+</code>
+      :
+      <div class='force-inline'>
+        <p>copy</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L3340-L3349'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='save' class='function'>
+    save<span class='gray section-params'>(filename, [format], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Encode this image and save it to disk as a file.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>filename</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>format</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+=
+  (<code>png</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L3273-L3283'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='saveSync' class='function'>
+    saveSync<span class='gray section-params'>(filename, [format])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Encode this image and save it to disk as a file.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>filename</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>format</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+=
+  (<code>png</code>)</td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'>myImage.saveSync(<span class="hljs-string">'foo.png'</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L468-L475'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='setPixel' class='function'>
+    setPixel<span class='gray section-params'>(x, y, numeric)</span>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>x</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'><p>position within image from top left</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>y</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'><p>position within image from top left</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>numeric</td>
+            <td>(
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+|
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+)
+ </td>
+            <td class='param-description'><p>or object representation of a color</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L3245-L3255'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='view' class='function'>
+    view<span class='gray section-params'>(x, y, width, height)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get a constrained view of this image given x, y, width, height parameters.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>x</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>y</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Image
+</code>
+      :
+      <div class='force-inline'>
+        <p>an image constrained to this new view</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L2059-L2066'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='width' class='function'>
+    width<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get this image&#x27;s width</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>width</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L2781-L2792'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='fromBufferSync' class='function'>
+    fromBufferSync<span class='gray section-params'>(width, height, buffer)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Create an image of the existing buffer. BUFFER MUST LIVE AS LONG AS THE IMAGE.
+It is recommended that you do not use this method! Be warned!</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>buffer</td>
+            <td><a href="https://nodejs.org/api/buffer.html">Buffer</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+      <h4>Returns</h4>
+      <code>mapnik.Image
+</code>
+      :
+      <div class='force-inline'>
+        <p>image object</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L2941-L2949'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='fromBytes' class='function'>
+    fromBytes<span class='gray section-params'>(buffer, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Create a new image from a buffer</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>buffer</td>
+            <td><a href="https://nodejs.org/api/buffer.html">Buffer</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L2433-L2441'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='fromSVG' class='function'>
+    fromSVG<span class='gray section-params'>(filename, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Create a new image from an SVG file</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>filename</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L2602-L2610'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='fromSVGBytes' class='function'>
+    fromSVGBytes<span class='gray section-params'>(filename, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Create a new image from an SVG file</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>filename</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_datasource.cpp#L202-L210'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+  <h2 id='describe' class='function'>
+    describe<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Describe the datasource&#x27;s contents and type.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>description: an object with type, fields, encoding,
+geometry_type, and proj4 code</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_datasource.cpp#L166-L173'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+  <h2 id='extent' class='function'>
+    extent<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the Datasource&#x27;s extent</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_geometry.cpp#L318-L325'>node_modules/mapnik/src/mapnik_geometry.cpp</a>
+  <h2 id='extent' class='function'>
+    extent<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the geometry&#x27;s extent</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_geometry.cpp#L195-L205'>node_modules/mapnik/src/mapnik_geometry.cpp</a>
+  <h2 id='toJSON' class='function'>
+    toJSON<span class='gray section-params'>([options], callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Convert this geometry into a <a href="http://geojson.org/">GeoJSON</a> representation,
+asynchronously.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'><p>. The only supported object is <code>transform</code>,
+which should be a valid mapnik.ProjTransform
+object.</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'><p>called with (err, result)</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_geometry.cpp#L108-L116'>node_modules/mapnik/src/mapnik_geometry.cpp</a>
+  <h2 id='toJSONSync' class='function'>
+    toJSONSync<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Convert this geometry into a <a href="http://geojson.org/">GeoJSON</a> representation,
+synchronously.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>GeoJSON, string-encoded representation of this geometry.</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_geometry.cpp#L362-L369'>node_modules/mapnik/src/mapnik_geometry.cpp</a>
+  <h2 id='toWKB' class='function'>
+    toWKB<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the geometry&#x27;s representation as Well-Known Binary</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>wkb representation of this geometry</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_geometry.cpp#L338-L345'>node_modules/mapnik/src/mapnik_geometry.cpp</a>
+  <h2 id='toWKT' class='function'>
+    toWKT<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the geometry&#x27;s representation as <a href="http://en.wikipedia.org/wiki/Well-known_text">Well-Known Text</a></p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>wkt representation of this geometry</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_geometry.cpp#L93-L100'>node_modules/mapnik/src/mapnik_geometry.cpp</a>
+  <h2 id='type' class='function'>
+    type<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get the geometry type</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>type of geometry.</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_projection.cpp#L96-L108'>node_modules/mapnik/src/mapnik_projection.cpp</a>
+  <h2 id='forward' class='function'>
+    forward<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Project from a position in WGS84 space to a position in this projection.</p>
+
+  
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> merc = <span class="hljs-keyword">new</span> mapnik.Projection(<span class="hljs-string">'+init=epsg:3857'</span>);
+<span class="hljs-keyword">var</span> long_lat_coords = [<span class="hljs-number">-122.33517</span>, <span class="hljs-number">47.63752</span>];
+<span class="hljs-keyword">var</span> projected = merc.forward(long_lat_coords);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_projection.cpp#L165-L174'>node_modules/mapnik/src/mapnik_projection.cpp</a>
+  <h2 id='inverse' class='function'>
+    inverse<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Unproject from a position in this projection to the same position in WGS84
+space.</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_color.cpp#L228-L235'>node_modules/mapnik/src/mapnik_color.cpp</a>
+  <h2 id='get_premultiplied' class='function'>
+    get_premultiplied<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get whether this color is premultiplied</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>premultiplied</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_color.cpp#L284-L295'>node_modules/mapnik/src/mapnik_color.cpp</a>
+  <h2 id='hex' class='function'>
+    hex<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get this color represented as a hexademical string</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>hex representation</p>
+
+      </div>
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'green'</span>);
+c.hex();
+<span class="hljs-comment">// '#008000'</span></pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_color.cpp#L243-L254'>node_modules/mapnik/src/mapnik_color.cpp</a>
+  <h2 id='set_premultiplied' class='function'>
+    set_premultiplied<span class='gray section-params'>(premultiplied)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Set whether this color should be premultiplied</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>premultiplied</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+    <h4>Throws</h4>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError">TypeError</a>
+: <div class='force-inline'><p>given a non-boolean argument</p>
+</div></li>
+    </ul>
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'green'</span>);
+c.set_premultiplied(<span class="hljs-literal">true</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_color.cpp#L266-L277'>node_modules/mapnik/src/mapnik_color.cpp</a>
+  <h2 id='toString' class='function'>
+    toString<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Get this color&#x27;s representation as a string</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>color as a string</p>
+
+      </div>
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> green = <span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'green'</span>);
+green.toString()
+<span class="hljs-comment">// 'rgb(0,128,0)'</span></pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_featureset.cpp#L56-L64'>node_modules/mapnik/src/mapnik_featureset.cpp</a>
+  <h2 id='next' class='function'>
+    next<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Return the next Feature in this featureset if it exists, or <code>null</code> if it
+does not.</p>
+
+  
+
+
+      <h4>Returns</h4>
+      <code>(
+mapnik.Feature
+|
+null
+)
+</code>
+      :
+      <div class='force-inline'>
+        <p>next feature</p>
+
+      </div>
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/node_mapnik.cpp#L77-L90'>node_modules/mapnik/src/node_mapnik.cpp</a>
+  <h2 id='mapnik' class='function'>
+    mapnik<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Mapnik is the core of cartographic design and processing.</p>
+
+  
+
+    <h4>Properties</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>prop</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>version</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>current version of mapnik</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>module_path</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>path to native mapnik binding</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>supports</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+ </td>
+            <td class='param-description'><p>indicates which of the following are supported:
+grid, svg, cairo, cairo_pdf, cairo_svg, png, jpeg, tiff, webp, proj4, threadsafe</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>versions</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+ </td>
+            <td class='param-description'><p>diagnostic object with versions of
+node, v8, boost, boost_number, mapnik, mapnik_number, mapnik_git_describe, cairo</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> mapnik = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-mapnik'</span>);</pre>
+
+    <h4>Static members</h4>
+      <div class='collapsible' id='mapnik.compositeOp'>
+        <a href='#mapnik.compositeOp'>
+          <code>
+            .compositeOp<span class='gray'></span>
+          </code>
+        </a>
+        <div class='collapser border px2 m2'>
+        <section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/node_mapnik.cpp#L223-L267'>node_modules/mapnik/src/node_mapnik.cpp</a>
+  <h2 id='mapnik.compositeOp' class='function'>
+    compositeOp<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Image type constants representing color and grayscale encodings.
+Composite operation constants</p>
+
+  
+
+    <h4>Properties</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>prop</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>clear</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>src</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>dst</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>src_over</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>dst_over</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>src_in</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>dst_in</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>src_out</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>dst_out</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>src_atop</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>dst_atop</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>xor</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>plus</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>minus</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>multiply</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>screen</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>overlay</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>darken</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>lighten</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>color_dodge</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>color_burn</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>hard_light</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>soft_light</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>difference</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>exclusion</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>contrast</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>invert</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>invert-rgb</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>grain_merge</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>grain_extract</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>hue</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>saturation</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>color</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>linear_dodge</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>linear_burn</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>divide</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+</section>
+        </div>
+      </div>
+      <div class='collapsible' id='mapnik.imageScaling'>
+        <a href='#mapnik.imageScaling'>
+          <code>
+            .imageScaling<span class='gray'></span>
+          </code>
+        </a>
+        <div class='collapser border px2 m2'>
+        <section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/node_mapnik.cpp#L341-L365'>node_modules/mapnik/src/node_mapnik.cpp</a>
+  <h2 id='mapnik.imageScaling' class='function'>
+    imageScaling<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Image scaling type constants representing color and grayscale encodings.</p>
+
+  
+
+    <h4>Properties</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>prop</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>near</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>bilinear</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>bicubic</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>spline16</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>spline36</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>hanning</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>hamming</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>hermite</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>kaiser</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>quadric</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>catrom</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gaussian</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>bessel</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>mitchell</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>sinc</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>lanczos</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>blackman</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+</section>
+        </div>
+      </div>
+      <div class='collapsible' id='mapnik.imageType'>
+        <a href='#mapnik.imageType'>
+          <code>
+            .imageType<span class='gray'></span>
+          </code>
+        </a>
+        <div class='collapser border px2 m2'>
+        <section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/node_mapnik.cpp#L307-L325'>node_modules/mapnik/src/node_mapnik.cpp</a>
+  <h2 id='mapnik.imageType' class='function'>
+    imageType<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Image type constants representing color and grayscale encodings.</p>
+
+  
+
+    <h4>Properties</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>prop</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>rgba8</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray8</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray8s</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray16</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray16s</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray32</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray32s</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray32f</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray64</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray64s</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>gray64f</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+</section>
+        </div>
+      </div>
+      <div class='collapsible' id='mapnik.polygonFillType'>
+        <a href='#mapnik.polygonFillType'>
+          <code>
+            .polygonFillType<span class='gray'></span>
+          </code>
+        </a>
+        <div class='collapser border px2 m2'>
+        <section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/node_mapnik.cpp#L386-L397'>node_modules/mapnik/src/node_mapnik.cpp</a>
+  <h2 id='mapnik.polygonFillType' class='function'>
+    polygonFillType<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Image scaling type constants representing color and grayscale encodings.</p>
+
+  
+
+    <h4>Properties</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>prop</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>evenOdd</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>nonZero</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>positive</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>negative</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+</section>
+        </div>
+      </div>
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/blend.cpp#L440-L460'>node_modules/mapnik/src/blend.cpp</a>
+  <h2 id='mapnik.blend' class='function'>
+    mapnik.blend<span class='gray section-params'>(options, callback)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Composite multiple images on top of each other, with strong control
+over how the images are combined, resampled, and blended.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+ </td>
+            <td class='param-description'><p>can include width, height, <code>compression</code>,
+<code>reencode</code>, palette, mode can be either <code>hextree</code> or <code>octree</code>, quality. JPEG &amp; WebP quality
+quality ranges from 0-100, PNG quality from 2-256. Compression varies by platform -
+it references the internal zlib compression algorithm.</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>callback</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">Function</a>
+ </td>
+            <td class='param-description'><p>called with (err, res), where a successful
+result is a processed image as a Buffer</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'>mapnik.blend([
+ fs.readFileSync(<span class="hljs-string">'foo.png'</span>),
+ fs.readFileSync(<span class="hljs-string">'bar.png'</span>),
+], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, result</span>) </span>{
+ <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+ fs.writeFileSync(<span class="hljs-string">'result.png'</span>, result);
+});</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_color.cpp#L13-L28'>node_modules/mapnik/src/mapnik_color.cpp</a>
+  <h2 id='mapnik.Color' class='function'>
+    mapnik.Color<span class='gray section-params'>(value, green, blue, blue, premultiplied)</span>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>value</td>
+            <td>(
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+|
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+)
+ </td>
+            <td class='param-description'><p>either an array of [r, g, b, a],
+a color keyword, or a CSS color in rgba() form.</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>green</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>blue</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>blue</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>premultiplied</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+    <h4>Throws</h4>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError">TypeError</a>
+: <div class='force-inline'><p>if a rgb component is outside of the 0-255 range</p>
+</div></li>
+    </ul>
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-string">'green'</span>);
+<span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>);
+<span class="hljs-comment">// premultiplied</span>
+<span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> mapnik.Color(<span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-literal">true</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_datasource.cpp#L22-L28'>node_modules/mapnik/src/mapnik_datasource.cpp</a>
+  <h2 id='mapnik.Datasource' class='function'>
+    mapnik.Datasource<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>A Datasource object. This is the connector from Mapnik to any kind
+of file, network, or database source of geographical data.</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_feature.cpp#L16-L23'>node_modules/mapnik/src/mapnik_feature.cpp</a>
+  <h2 id='mapnik.Feature' class='function'>
+    mapnik.Feature<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>A single geographic feature, with geometry and properties. This is
+typically derived from data by a datasource, but can be manually
+created.</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_featureset.cpp#L6-L11'>node_modules/mapnik/src/mapnik_featureset.cpp</a>
+  <h2 id='mapnik.Featureset' class='function'>
+    mapnik.Featureset<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>An iterator of <a href="#mapnik.Feature">mapnik.Feature</a>
+objects.</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_geometry.cpp#L13-L24'>node_modules/mapnik/src/mapnik_geometry.cpp</a>
+  <h2 id='mapnik.Geometry' class='function'>
+    mapnik.Geometry<span class='gray section-params'></span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Geometry: a representation of geographical features in terms of
+shape alone. This class provides many useful functions for conversion
+to and from formats.</p>
+<p>You&#x27;ll never create a mapnik.Geometry instance manually: it is always
+part of a <a href="#mapnik.Feature">mapnik.Feature</a>
+instance, which is often a part of
+a <a href="#mapnik.Featureset">mapnik.Featureset</a>
+instance.</p>
+
+  
+
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_grid.cpp#L17-L27'>node_modules/mapnik/src/mapnik_grid.cpp</a>
+  <h2 id='mapnik.Grid' class='function'>
+    mapnik.Grid<span class='gray section-params'>(width, height, [options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>Generator for <a href="https://www.mapbox.com/guides/an-open-platform">UTFGrid</a>
+representations of data.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{}</code>)</td>
+            <td class='param-description'><p>optional argument, which can have a &#x27;key&#x27; property</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+    <h4>Properties</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>prop</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>key</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image.cpp#L51-L65'>node_modules/mapnik/src/mapnik_image.cpp</a>
+  <h2 id='mapnik.Image' class='function'>
+    mapnik.Image<span class='gray section-params'>(width, height, options)</span>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+ </td>
+            <td class='param-description'><p>valid options are <code>premultiplied</code>, <code>painted</code>,
+<code>type</code> and <code>initialize</code>.</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+    <h4>Throws</h4>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError">TypeError</a>
+: <div class='force-inline'><p>if any argument is the wrong type, like if width
+or height is not numeric.</p>
+</div></li>
+    </ul>
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>, {
+  <span class="hljs-attr">premultiplied</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">type</span>: mapnik.imageType.gray8
+});</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_image_view.cpp#L19-L33'>node_modules/mapnik/src/mapnik_image_view.cpp</a>
+  <h2 id='mapnik.ImageView' class='function'>
+    mapnik.ImageView<span class='gray section-params'>(left, top, width, height)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>This is usually not initialized directly: you&#x27;ll use the <code>mapnik.Image#view</code>
+method to instantiate an instance.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>left</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>top</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>height</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+    <h4>Throws</h4>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError">TypeError</a>
+: <div class='force-inline'><p>if any argument is missing or not numeric</p>
+</div></li>
+    </ul>
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> im = <span class="hljs-keyword">new</span> mapnik.Image(<span class="hljs-number">256</span>, <span class="hljs-number">256</span>);
+<span class="hljs-keyword">var</span> view = im.view(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">256</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_map.cpp#L53-L64'>node_modules/mapnik/src/mapnik_map.cpp</a>
+  <h2 id='mapnik.Map' class='function'>
+    mapnik.Map<span class='gray section-params'>(width, width, projection)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>A map in mapnik is an object that combined data sources and styles in
+a way that lets you produce styled cartographic output.</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>width</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>projection</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>as a proj4 code</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> map = <span class="hljs-keyword">new</span> mapnik.Map(<span class="hljs-number">25</span>, <span class="hljs-number">25</span>, <span class="hljs-string">'+init=epsg:3857'</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_projection.cpp#L11-L25'>node_modules/mapnik/src/mapnik_projection.cpp</a>
+  <h2 id='mapnik.Projection' class='function'>
+    mapnik.Projection<span class='gray section-params'>(projection, [options])</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>A geographical projection: this class makes it possible to translate between
+locations in different projections</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>projection</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ </td>
+            <td class='param-description'><p>projection as a proj4 definition string</p>
+</td>
+          </tr>
+
+          <tr class='param'>
+            <td>options</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+=
+  (<code>{lazy:false}</code>)</td>
+            <td class='param-description'><p>whether to lazily instantiate the
+data backing this projection.</p>
+</td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+    <h4>Throws</h4>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError">TypeError</a>
+: <div class='force-inline'><p>if the projection string or options argument is the wrong type</p>
+</div></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>
+: <div class='force-inline'><p>the projection could not be initialized - it was not found
+in proj4&#x27;s tables or the string was malformed</p>
+</div></li>
+    </ul>
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> wgs84 = <span class="hljs-keyword">new</span> mapnik.Projection(<span class="hljs-string">'+init=epsg:4326'</span>);</pre>
+
+
+
+
+</section>
+</div><div class='main'><section class='py2 clearfix'>
+    <a class='github gray' href='https://github.com/mapnik/documentation/blob/ddeaaa1dc5a1e7402ca32231d1b3fff95e227a74/node_modules/mapnik/src/mapnik_vector_tile.cpp#L338-L349'>node_modules/mapnik/src/mapnik_vector_tile.cpp</a>
+  <h2 id='mapnik.VectorTile' class='function'>
+    mapnik.VectorTile<span class='gray section-params'>(z, x, y)</span>
+  </h2>
+  
+  
+  
+  
+  
+  <p>A generator for the <a href="https://www.mapbox.com/developers/vector-tiles/">Mapbox Vector Tile</a>
+specification of compressed and simplified tiled vector data</p>
+
+  
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+          <tr class='param'>
+            <td>z</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>x</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+          <tr class='param'>
+            <td>y</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+ </td>
+            <td class='param-description'></td>
+          </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <h4>Example</h4>
+
+    <pre class='overflow-auto'><span class="hljs-keyword">var</span> vtile = <span class="hljs-keyword">new</span> mapnik.VectorTile(<span class="hljs-number">9</span>,<span class="hljs-number">112</span>,<span class="hljs-number">195</span>);</pre>
+
+
+
+
+</section>
+</div>
+    </div>
+  </div>
+
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
