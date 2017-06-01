@@ -14,7 +14,7 @@ fi
 REPO=`git config remote.origin.url`
 SHA=`git rev-parse --verify HEAD`
 
-# since we are doing this from the master branch, let's 
+# since we are doing this from the master branch, let's
 #  get a fresh clone ready, and set it to gh-pages
 git clone $REPO out
 cd out
@@ -32,7 +32,7 @@ git config user.email "$GH_EMAIL"
 
 git add --all # dangerous? risky business? WATCH OUT!
 git commit -m "Update docs at ${SHA}"
-git push "https://$GITHUB_AUTH@github.com/mapnik/documentation.git" $TARGET_BRANCH
+git push "https://$GITHUB_TOKEN@github.com/mapnik/documentation.git" $TARGET_BRANCH
 
 # wise words from mapnikbot
 PAYLOAD='payload={"channel": "#mapnik", "username": "mapnikbot", "text": "Documentation has been updated at <http://mapnik.org/documentation/node-mapnik/|mapnik.org/documentation/node-mapnik>!"}'
