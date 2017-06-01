@@ -20,7 +20,7 @@ cd ..
 git clone $REPO out && cd out && git checkout $TARGET_BRANCH && cd ..
 
 # copy over the newly rolled docs from scripts/generate.sh to the /out directory
-cp -r documentation out
+cp -r documentation/* out/
 
 # now go back into our fresh clone, with updated files
 # and start getting things ready for the push
