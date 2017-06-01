@@ -5,12 +5,14 @@
   "main": "index.js",
   "author": "Mapnik",
   "scripts": {
-    "test": "echo 'This is our test!'"
+    "test": "echo 'This is our test!'",
+    "docs": "./scripts/generate.sh",
+    "deploy": "./scripts/deploy.sh"
   },
   "license": "ISC",
   "devDependencies": {
     "documentation": "4.0.0-beta2",
-    "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
+    "mapnik": "git@github.com:mapnik/node-mapnik.git#master",
     "node-mapnik-theme": "0.0.3"
   }
 }
