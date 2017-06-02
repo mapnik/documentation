@@ -31,7 +31,7 @@ module.exports = function (comments, options, callback) {
   Handlebars.registerHelper('mapnik_gitsha', function(url) {
     var base = 'https://github.com/mapnik/node-mapnik/blob';
     var gitsha = process.env.NODE_MAPNIK_GITSHA || 'master';
-    var source = url.slice(url.indexOf('src/'), -1);
+    var source = url.slice(url.indexOf('src/'));
     return `${base}/${gitsha}/${source}`;
   });
 
