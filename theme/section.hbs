@@ -1,0 +1,151 @@
+<section class='py2 clearfix'>
+  {{#if context.github}}
+    <a class='github gray' href='{{mapnik_gitsha context.github}}'>{{context.path}}</a>
+  {{/if}}
+  <h2 id='{{permalink}}' class='function'>
+    {{name}}<span class='gray section-params'>{{format_params}}</span>
+  </h2>
+  {{#if augments}}
+    <p>
+      Extends
+      {{#augments}}
+        {{autolink name}}
+      {{/augments}}
+    </p>
+  {{/if}}
+  {{#if version }}<div>Version: {{version}}</div>{{/if}}
+  {{#if license }}<div>License: {{license}}</div>{{/if}}
+  {{#if author }}<div>Author: {{author}}</div>{{/if}}
+  {{#if copyright }}<div>Copyright: {{copyright}}</div>{{/if}}
+  {{#if since }}<div>Since: {{since}}</div>{{/if}}
+  {{md description}}
+
+  {{#if params}}
+    <h4>Parameters</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>param</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+        {{#params}}
+          <tr class='param'>
+            <td>{{name}}</td>
+            <td>{{format_type type}} {{#default}} (<code>{{.}}</code>){{/default}}</td>
+            <td class='param-description'>{{md description}}</td>
+          </tr>
+
+          {{#if properties}}
+            {{#properties}}
+            <tr class='param'>
+              <td>{{name}}</td>
+              <td>{{format_type type}} {{#default}} (<code>{{.}}</code>){{/default}}</td>
+              <td class='param-description'>{{md description}}</td>
+            </tr>
+            {{/properties}}
+          {{/if}}
+        {{/params}}
+      </table>
+    </div>
+  {{/if}}
+
+  {{#if properties}}
+    <h4>Properties</h4>
+    <div class='table-wrapper'>
+      <table class='params'>
+        <tr>
+          <th>prop</th>
+          <th>type = default</th>
+          <th>description</th>
+        </tr>
+        {{#properties}}
+          <tr class='param'>
+            <td>{{name}}</td>
+            <td>{{format_type type}} {{#default}} (<code>{{.}}</code>){{/default}}</td>
+            <td class='param-description'>{{md description}}</td>
+          </tr>
+
+          {{#if properties}}
+            {{#properties}}
+            <tr class='param'>
+              <td>{{name}}</td>
+              <td>{{format_type type}} {{#default}} (<code>{{.}}</code>){{/default}}</td>
+              <td class='param-description'>{{md description}}</td>
+            </tr>
+            {{/properties}}
+          {{/if}}
+        {{/properties}}
+      </table>
+    </div>
+  {{/if}}
+
+  {{#if returns}}
+    {{#returns}}
+      <h4>Returns</h4>
+      <code>{{format_type type}}</code>
+      {{#if description}}:{{/if}}
+      <div class='force-inline'>
+        {{md description}}
+      </div>
+    {{/returns}}
+  {{/if}}
+
+  {{#if throws}}
+    <h4>Throws</h4>
+    <ul>
+      {{#throws}}
+        <li>{{format_type type}}: <div class='force-inline'>{{md description}}</div></li>
+      {{/throws}}
+    </ul>
+  {{/if}}
+
+  {{#if examples}}
+    <h4>Example</h4>
+  {{#each examples ~}}
+    {{#if caption}}<p>{{md caption}}</p>{{/if}}
+    <pre class='overflow-auto'>{{highlight description}}</pre>
+  {{/each}}
+  {{/if}}
+
+  {{#if members.static}}
+    <h4>Static members</h4>
+    {{#each members.static}}
+      <div class='collapsible' id='{{permalink}}'>
+        <a href='#{{permalink}}'>
+          <code>
+            .{{name}}<span class='gray'>{{format_params}}</span>
+          </code>
+        </a>
+        <div class='collapser border px2 m2'>
+        {{> section}}
+        </div>
+      </div>
+    {{/each}}
+  {{/if}}
+
+  {{#if members.instance}}
+    <h4>Instance members</h4>
+    {{#each members.instance}}
+      <div class='collapsible' id='{{permalink}}'>
+        <a href='#{{permalink}}'>
+          <code>
+            #{{name}}<span class='gray'>{{format_params}}</span>
+          </code>
+        </a>
+        <div class='collapser border px2'>
+        {{> section}}
+        </div>
+      </div>
+    {{/each}}
+  {{/if}}
+
+  {{#if events}}
+    {{#each events}}
+      <div>
+      {{> section}}
+      </div>
+    {{/each}}
+  {{/if}}
+
+</section>

@@ -14,4 +14,8 @@ The scripts/generate.sh script takes the version from the master branch of mapni
 
 ## Need to rebuild an old version?
 
-You can update the package.json with a specific git tag to install from. Here's an example: `git@github.com:mapnik/node-mapnik.git#v3.4.19` - once you reinstall mapnik you can run `./scripts/generate.sh` and it will out put into a new folder or replace a currently existing folder for that minor version. Merge into master and then merge into the gh-pages branch.
+You can update the `REPO` variable within scripts/generate.sh with a specific git tag to install from. Here's an example: `git@github.com:mapnik/node-mapnik.git#v3.4.19` - once you reinstall mapnik you can run `./scripts/generate.sh` and it will out put into a new folder or replace a currently existing folder for that minor version. Merge into master and this will be caught by TravisCI and merged into the gh-pages branch.
+
+# Theme
+
+The documentation theme used by DocumentationJS is located in the /theme directory. This theme is passed as a parameter `--theme` in /scripts/generate.sh. Since we are building the documentation from within a repository different than the source Node Mapnik repository, there is a custom handler called `mapnik_gitsha` to manage the proper GitSha to point to the Node Mapnik source lines on GitHub. 
