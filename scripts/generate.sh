@@ -3,7 +3,7 @@
 set -eu
 
 REPO="https://github.com/mapnik/node-mapnik.git"
-BRANCH="v3.4.19"
+BRANCH="master"
 
 # clone node-mapnik master to get current gisha and minor version
 # this is used to build proper source links in the documentation
