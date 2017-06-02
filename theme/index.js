@@ -35,6 +35,10 @@ module.exports = function (comments, options, callback) {
     return `${base}/${gitsha}/${source}`;
   });
 
+  Handlebars.registerHelper('mapnik_srcpath', function(url) {
+    return url.slice(url.indexOf('/src/'));
+  });
+
   Handlebars.registerHelper('permalink', function(url) {
     return url;
   });

@@ -1,6 +1,6 @@
 <section class='py2 clearfix'>
   {{#if context.github}}
-    <a class='github gray' href='{{mapnik_gitsha context.github}}'>{{context.path}}</a>
+    <a class='github gray' href='{{mapnik_gitsha context.github}}'>{{mapnik_srcpath context.path}}</a>
   {{/if}}
   <h2 id='{{permalink}}' class='function'>
     {{name}}<span class='gray section-params'>{{format_params}}</span>

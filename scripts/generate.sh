@@ -2,14 +2,15 @@
 # repository and running documentationjs commands
 set -eu
 
-REPO="https://github.com/mapnik/node-mapnik/tarball/master"
+REPO="https://github.com/mapnik/node-mapnik.git"
+BRANCH="v3.4.19"
 
 # clone node-mapnik master to get current gisha and minor version
 # this is used to build proper source links in the documentation
 # and set the minor version (i.e. 3.5) for building a proper
 # directory for docs to live
 TMP_REPO=./tmp-node-mapnik-repo
-git clone $REPO $TMP_REPO && cd $TMP_REPO
+git clone --branch $BRANCH $REPO $TMP_REPO --depth 1 && cd $TMP_REPO
 NODE_MAPNIK_GITSHA=`git rev-parse --verify HEAD`
 FULL_VERSION=$(node -e "console.log(require('./package.json').version)")
 MINOR_VERSION=$(node -e "console.log('$FULL_VERSION'.slice(0, '$FULL_VERSION'.lastIndexOf('.')))")
