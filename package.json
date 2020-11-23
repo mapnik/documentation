@@ -5,14 +5,12 @@
   "main": "index.js",
   "author": "Mapnik",
   "scripts": {
-    "test": "echo 'This is our test!'",
-    "docs": "./scripts/generate.sh",
-    "deploy": "./scripts/deploy.sh"
+    "test": "echo 'Disable generation and publishing pending upgrading to doc system with c++ support'",
   },
   "license": "ISC",
   "devDependencies": {
     "concat-stream": "^1.5.0",
-    "documentation": "^12.1.4",
+    "documentation": "^13.1.0",
     "documentation-theme-utils": "^1.2.1",
     "globals-docs": "^2.1.0",
     "handlebars": "^4.7.2",
